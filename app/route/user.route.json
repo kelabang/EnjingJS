@@ -1,0 +1,47 @@
+[{
+	"name": "get user",
+	"method": "GET",
+	"path": "/user/{username?}",
+	"handler": {
+		"path": "user.controller.js",
+		"method": "getUser"
+	},
+	"validation": {
+		"params": {
+			"username": "string|min@4|alphanum|required"
+		},
+		"query": {
+			"active": "string|max@5|alphanum"
+		}
+	}
+},
+{
+	"name": "create user",
+	"method": "POST",
+	"path": "/user",
+	"handler": {
+		"path": "user.controller.js",
+		"method": "createUser"
+	},
+	"validation": {
+		"payload": {
+			"username": "string|min@4|max@13|alphanum|required", 
+			"email": "string|min@5|alphanum|email|required",
+			"password": "string|min@5|regex@^[a-zA-Z0-9]{3,30}$|required"
+		}
+	}
+},
+{
+	"name": "follow user",
+	"method": "POST",
+	"path": "/user/follow",
+	"handler": {
+		"path": "user.controller.js",
+		"method": "followUser"
+	},
+	"validation": {
+		"payload": {
+			"username": "string|min@4|max@13|alphanum|required"
+		}
+	}
+}]

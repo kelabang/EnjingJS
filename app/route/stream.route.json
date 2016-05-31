@@ -1,0 +1,9 @@
+[{
+	"name": "get following stream",
+	"method": "GET",
+	"path": "/stream/following",
+	"handler": {
+		"path": "stream.controller.js",
+		"method": "getFollowingStream"
+	}
+}]
