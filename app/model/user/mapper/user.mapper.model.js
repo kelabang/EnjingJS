@@ -1,16 +1,32 @@
 'use strict'
 const Mapper = require(__dirname + '/../../../super/mapper.super.js')
 class UserMapperModel extends Mapper {
-	constructor (db) {
+	constructor (db, profileMapper) {
 		super()
 		this.mapper = db.extendModel({
-			tableName: 'user'
+			tableName: 'user',
+			profile: function () {
+				return this.hasOne(profileMapper.mapper)
+			}
 		})
 	}
+	findWithProfile(user) {
+		return this.mapper
+							.query((qb) => {
+								qb 	.where('username', user.username)
+									.orWhere('id', user.id)
+							})
+							.fetch({
+								withRelated: ['profile']
+							})
+	}
 	find(user) {
-		return this._createMapper({
-									username: user.username
-								}).fetch()
+		return this.mapper
+							.query((qb) => {
+								qb 	.where('username', user.username)
+									.orWhere('id', user.id)
+							})
+							.fetch()
 	}
 	save(user) {
 		return this._createMapper({

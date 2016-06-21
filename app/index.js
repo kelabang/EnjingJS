@@ -21,6 +21,9 @@ const route = di.container.Route
 console.log('-- di container connection --')
 const connection = di.container.Connection
 
+console.log('-- di container authentication --')
+const authentication = di.container.Authentication
+
 config
 		.setupAsync(target)
 		.then((configuration) => {
@@ -28,6 +31,7 @@ config
 			register.config(configuration.register)
 			route.config(configuration.route)
 			connection.config(configuration.database)
+			authentication.config(configuration.auth)
 			return server.setupAsync()
 		})
 		.then((data) => {

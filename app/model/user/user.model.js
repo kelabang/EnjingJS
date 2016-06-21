@@ -1,11 +1,12 @@
 'use strict'
 const Model = require(__dirname + '/../../super/model.super.js')
 class UserModel extends Model {
-	constructor (userEntity, userMapper, followModel) {
+	constructor (userEntity, userMapper, followModel, Authentication) {
 		super()
 		this.userEntity = userEntity
 		this.userMapper = userMapper
 		this.followModel = followModel
+		this.authenticator = Authentication.create('jwt')
 	}
 	serviceFollowUser(ownername, username) {
 		return new this.Promise((resolve, reject) => {
@@ -27,18 +28,18 @@ class UserModel extends Model {
 			})
 		})
 	}
-	serviceGetUser(username) {
+	serviceValidUser(username) {
 		let user = this.userEntity.create()
-		user.username = username		
+		user.username = username
 		return new this.Promise((resolve, reject) => {
-			return this .userMapper
+			return this	.userMapper
 						.find(user)
 						.then((data) => {
 							if(!data) return resolve(data)
 							resolve({
 								id: data.get('id'),
 								username: data.get('username'),
-								email: data.get('email')
+								password: data.get('password')
 							})
 						})
 						.error((err) => {
@@ -47,10 +48,70 @@ class UserModel extends Model {
 						.catch((err) => {
 							reject(err)
 						})
-		})												
+		})
 	}
-
+	serviceGetUser(username) {
+		let user = this.userEntity.create()
+		user.username = username
+		return new this.Promise((resolve, reject) => {
+			return this .userMapper
+						.findWithProfile(user)
+						.then((user) => {
+							if(!user) return resolve(user)
+							// console.log(JSON.stringify(user.related('profile')))
+							resolve({
+								id: user.get('id'),
+								username: user.get('username'),
+								email: user.get('email'),
+								firstname: user.related('profile').get('firstname'),
+								lastname: user.related('profile').get('lastname')
+							})
+						})
+						.error((err) => {
+							reject(err)
+						})
+						.catch((err) => {
+							reject(err)
+						})
+		})
+	}
+	serviceSignedUser(id, username, email) {
+		console.log('-->> service signed user')
+		let user = this.userEntity.create()
+		user.id = id
+		user.username = username
+		user.email = email
+		return new this.Promise((resolve, reject) => {
+			return this	.userMapper
+						.find(user)
+						.then((data) => {
+							if(!data) return resolve(data)
+							return this.authenticator.sign(user)
+						})
+						.then((token) => {
+							console.log('-->> after sign :: ', token)
+							resolve(token)
+						})
+						.error((err) => {
+							reject(err)
+						})
+						.catch((err) => {
+							reject(err)
+						})
+		})
+		// return this.authenticator.sign(user)
+		// .then((data) => {
+		// 	console.log('-->> user model')
+		// 	console.log(data)
+		// })
+		// .catch((err) => {
+		// 	console.log('-->> user model')
+		// 	console.error(err)
+		// })
+	}
 	serviceCreateUser(username, email, password) {
+		console.log('-->> execute service create user')
+		console.log('-->> arguments that passed ', arguments)
 		let user = this.userEntity.create()
 		user.username = username
 		user.email = email
@@ -63,17 +124,17 @@ class UserModel extends Model {
 								.serviceCreateDefaultCategory(data.get('id'))
 				})
 				.then((data) => {
-					resolve({
+					return resolve({
 						id: data.get('user_id'),
 						username: username,
 						email: email
 					})
 				})
 				.error((err) => {
-					reject(err)
+					return reject(err)
 				})
 				.catch((err) => {
-					reject(err)
+					return reject(err)
 				})
 		})
 	}

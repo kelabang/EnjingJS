@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
 							table.uuid('id').primary()
 							table.uuid('user_id').references('user.id')
 							table.string('name')
-							table.string('decscription')
+							table.string('description')
 							table.string('data')
 						})
 };

@@ -1,7 +1,8 @@
 {
-	"plugins": [
-		{
-			"nes": {}
+	"plugins": {
+		"nes": {
+			"options": {},
+			"after": {}
 		}
-	]
+	}
 }

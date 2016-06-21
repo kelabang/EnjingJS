@@ -1,0 +1,11 @@
+{
+	"hapi-auth-jwt": {
+		"type": "jwt",
+		"deps": "Authentication",
+		"handler": "setup"
+	},
+	"jwt": {
+		"public": "key/public",
+		"private": "key/private"
+	}	
+}

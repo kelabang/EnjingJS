@@ -25,11 +25,6 @@ class Route extends Core {
 			cb(err)
 		})
 	}
-	_curry(name, data) {
-		return (cb) => {
-
-		}
-	}
 	fetch (cb) {
 		const Promise = this.di.container.Promise
 		const path = __dirname + '/' + this.config().directory

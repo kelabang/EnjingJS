@@ -2,15 +2,17 @@
 const Controller = require(__dirname + '/../super/controller.super.js')
 const owner = 'ma4m'
 class UserController extends Controller {
-	constructor (model) {
-		super()
+	constructor (config, model) {
+		super(config)
 		this.model = model
 	}
 	followUser (body, params, query, reply) {
+		let message = ''
+		let output = []
 		this.model
 					.serviceFollowUser(owner, body.username)
 					.then((data) => {
-						let message = (data)? 'user followed': 'user fail followed' 
+						message = (data)? 'user followed': 'user fail followed' 
 						return reply({
 							'message': message,
 							'data': (data)? true: false
@@ -18,46 +20,51 @@ class UserController extends Controller {
 					})
 					.error((err) => {
 						console.log(err)
-						return reply({
-							error: 'InvalidParams',
-							message: 'Cannot process your request'
-						})
+						return reply(this._badRequest())
 					})
 	}
 	getUser (body, params, query, reply) {
+		let message = ''
+		let output = []
 		this.model
 					.serviceGetUser(params.username)
 					.then((data) => {
-						let message = (data)? 'user found': 'user not found' 
+						message = (data)? 'user found': 'user not found' 
+						output = data
 						return reply({
 							'message': message,
-							'data': data
+							'data': output
 						})
 					})
 					.error((err) => {
 						console.log(err)
-						return reply({
-							error: 'InvalidParams',
-							message: 'Cannot process your request'
-						})
+						return reply(this._badRequest())
 					})
 	}
 	createUser (body, params, query, reply) {
+		let message = ''
+		let output = []
 		this.model
 					.serviceCreateUser(body.username, body.email, body.password)
 					.then((data) => {
-						let message = (data)? 'user created': 'user fail created'
+						console.log('-->> service create user done ')
+						console.log('-->> return data ', data)
+						message = (data)? 'user created': 'user fail created'
+						output = data
+						return this.model  
+										.serviceSignedUser(data.id, body.username, body.email)
+					})
+					.then((_data) => {
+						console.log('-->> service sign user done controller')
+						console.log(_data)
 						return reply({
 							'message': message,
-							'data': data
+							'data': output
 						})
 					})
 					.error((err) => {
 						console.log(err)
-						return reply({
-							error: 'InvalidParams',
-							message: 'Cannot process your request'
-						})
+						return reply(this._badRequest())
 					})
 	}
 }

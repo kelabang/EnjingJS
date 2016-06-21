@@ -1,0 +1,16 @@
+{
+	"plugins": {
+		"nes": {
+			"options": {},
+			"after": {}
+		},
+		"hapi-auth-jwt": {
+			"options": {},
+			"after": {
+				"type": "jwt",
+				"deps": "Authentication",
+				"handler": "setup"
+			}
+		}
+	}
+}

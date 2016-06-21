@@ -4,7 +4,8 @@
 	"path": "/user/{username?}",
 	"handler": {
 		"path": "user.controller.js",
-		"method": "getUser"
+		"method": "getUser",
+		"start": "verify"
 	},
 	"validation": {
 		"params": {
@@ -21,7 +22,8 @@
 	"path": "/user",
 	"handler": {
 		"path": "user.controller.js",
-		"method": "createUser"
+		"method": "createUser",
+		"start": "start"
 	},
 	"validation": {
 		"payload": {
@@ -37,7 +39,8 @@
 	"path": "/user/follow",
 	"handler": {
 		"path": "user.controller.js",
-		"method": "followUser"
+		"method": "followUser",
+		"start": "start"
 	},
 	"validation": {
 		"payload": {

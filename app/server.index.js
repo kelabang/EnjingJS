@@ -8,6 +8,10 @@ class Server extends Core {
 	register (mod, cb) {
 		return this.server.register(mod, cb)
 	}
+	auth (param1, param2, config) {
+		this.server.auth.strategy(param1, param2, config)
+		this.server.auth.default(param1)
+	}
 	route (route) {
 		return this.server.route(route)
 	}

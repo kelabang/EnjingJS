@@ -47,15 +47,5 @@ class FollowMapperModel extends Mapper {
 	}
 	findUserWithUser(owner, user) {}
 	findUserWithTrip(owner, trip) {}
-	find(user) {}
-	save(user) {
-		return this._createMapper({
-			id: this.uuid.v4(),
-			username: user.username,
-			email: user.email,
-			password: user.password,
-			datecreated: this.moment.utc().format('YYYY-MM-DD HH:mm:ss')
-		}).save(null, {method: 'insert'})
-	}
 }
 module.exports = FollowMapperModel

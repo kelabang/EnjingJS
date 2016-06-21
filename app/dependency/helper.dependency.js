@@ -1,10 +1,11 @@
 'use strict'
-const Joi = require('joi')
+
+const Authentication = require(__dirname + '/../helper/authentication/authentication.helper.js')
+const JwtAuthentication = require(__dirname + '/../helper/authentication/adapter/jwt.authentication.helper.js')
+
 const Validation = require(__dirname + '/../helper/validation/validation.helper.js')
 const JoiValidation = require(__dirname + '/../helper/validation/adapter/joi.validation.helper.js')
 
-const knex = require('knex')
-const bookshelf = require('bookshelf')
 const Connection = require(__dirname + '/../helper/database/connection/connection.helper.js')
 const KnexConnection = require(__dirname + '/../helper/database/connection/adapter/knex.connection.helper.js')
 
@@ -13,9 +14,7 @@ const BookshelfOrm = require(__dirname + '/../helper/database/orm/adapter/booksh
 
 module.exports = (bottle) => {
 	const connection = new Connection(bottle)
-	bottle.factory('joi', (container) => {
-		return Joi
-	})
+	
 	bottle.factory('JoiValidation', (container) => {
 		const joi = container.joi
 		return new JoiValidation(joi)
@@ -24,18 +23,12 @@ module.exports = (bottle) => {
 		const bottle = container.Bottle
 		return new Validation(bottle)
 	})
-	bottle.factory('knex', (container) => {
-		return knex
-	})
 	bottle.factory('KnexConnection', (container) => {
 		const knex = container.knex
 		return new KnexConnection(knex)
 	})
 	bottle.factory('Connection', (container) => {
 		return connection
-	})
-	bottle.factory('bookshelf', (container) => {
-		return bookshelf
 	})
 	bottle.factory('BookshelfOrm', (container) => {
 		const bookshelf = container.bookshelf
@@ -51,5 +44,14 @@ module.exports = (bottle) => {
 
 		return orm.connect(connector)
 	})
+	bottle.service('Authentication', Authentication, 'Bottle')
+	bottle.factory('JwtAuthentication', (container) => {
+		const jwt = container.Jwt
+		const pem = container.Pem
+		const promise = container.Promise
+		const fs = container.fs
+		return promise.promisifyAll(new JwtAuthentication(jwt, pem, fs, promise))
+	})
+
 	return bottle
 }

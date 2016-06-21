@@ -3,3 +3,5 @@ opentrip.sublime-project
 node_modules
 bundle.js
 template
+app/key/private/*
+app/key/public/*

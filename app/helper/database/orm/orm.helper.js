@@ -17,7 +17,7 @@ class Orm extends Helper {
 			this.adapter = this.di.container[name]
 			this.adapter = this.adapter[this.type](this.connection.connect)
 		}
-		return this.adapter.Model.extend(persistent)
+		return this.adapter.Model.extend.call(this.adapter.Model, persistent)
 	}
 	extendCollection(persistent) {
 		if(!this.adapter){

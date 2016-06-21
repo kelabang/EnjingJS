@@ -1,0 +1,25 @@
+[{
+	"name": "login user",
+	"method": "POST",
+	"path": "/auth/login",
+	"handler": {
+		"path": "auth.controller.js",
+		"method": "postLogin",
+		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"username": "string|required", 
+			"password": "string|required"
+		}
+	}
+},{
+	"name": "register user",
+	"method": "POST",
+	"path": "/auth/register",
+	"handler": {
+		"path": "auth.controller.js",
+		"method": "postRegister",
+		"start": "start"
+	}
+}]
