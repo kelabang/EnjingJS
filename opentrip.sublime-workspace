@@ -4,6 +4,114 @@
 		"selected_items":
 		[
 			[
+				"with",
+				"withRelated"
+			],
+			[
+				"steram",
+				"streamEntity"
+			],
+			[
+				"publ",
+				"publicPath"
+			],
+			[
+				"prf",
+				"profileMapper"
+			],
+			[
+				"P",
+				"profileMapper"
+			],
+			[
+				"Profile",
+				"ProfileMapperModel"
+			],
+			[
+				"md",
+				"md5sum"
+			],
+			[
+				"create",
+				"createHash"
+			],
+			[
+				"genar",
+				"generatePassword"
+			],
+			[
+				"atuh",
+				"authHelper"
+			],
+			[
+				"auth",
+				"authHelper"
+			],
+			[
+				"bi",
+				"_birthday"
+			],
+			[
+				"ProfileM",
+				"ProfileMapper"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"A",
+				"AuthModel"
+			],
+			[
+				"createPib",
+				"createPublicKeyAsync"
+			],
+			[
+				"file",
+				"filename_pub"
+			],
+			[
+				"key",
+				"keys_pub"
+			],
+			[
+				"cretaeP",
+				"createPublicKey"
+			],
+			[
+				"cil",
+				"clientKey"
+			],
+			[
+				"cline",
+				"clientKey"
+			],
+			[
+				"createPrivateKey",
+				"createPrivateKeyAsync"
+			],
+			[
+				"public",
+				"publicPath"
+			],
+			[
+				"private",
+				"privatePath"
+			],
+			[
+				"con",
+				"configuration"
+			],
+			[
+				"config",
+				"configuration"
+			],
+			[
+				"Jwt",
+				"JwtAuthentication"
+			],
+			[
 				"parma",
 				"param1"
 			],
@@ -14,10 +122,6 @@
 			[
 				"para",
 				"param1"
-			],
-			[
-				"config",
-				"configure"
 			],
 			[
 				"ow",
@@ -64,20 +168,12 @@
 				"followcatEntity"
 			],
 			[
-				"user",
-				"userEntity"
-			],
-			[
 				"owner",
 				"ownername"
 			],
 			[
 				"Fol",
 				"followMapper"
-			],
-			[
-				"md",
-				"md5sum"
 			],
 			[
 				"STream",
@@ -140,10 +236,6 @@
 				"nextMethod"
 			],
 			[
-				"con",
-				"container"
-			],
-			[
 				"route",
 				"routeconf"
 			],
@@ -174,10 +266,6 @@
 			[
 				"mou",
 				"modules"
-			],
-			[
-				"key",
-				"keys"
 			],
 			[
 				"paddig",
@@ -396,77 +484,50 @@
 	"buffers":
 	[
 		{
-			"contents": "'use strict'\nclass JwtAuthentication {\n	constructor() {}\n	setup (server) {\n		console.log('-->> jwt auth')\n		console.log(server)\n			// server.auth.strategy()\n		console.log(server.auth('jwt', 'jwt', ))\n	}\n}\nmodule.exports = JwtAuthentication",
-			"file": "app/helper/authentication/adapter/jwt.authentication.helper.js",
-			"file_size": 223,
-			"file_write_time": 131094440710000000,
+			"file": "app/controller/auth.controller.js",
 			"settings":
 			{
-				"buffer_size": 239,
+				"buffer_size": 1871,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "node_modules/hapi/test/auth.js",
+			"file": "app/route/stream.route.json",
 			"settings":
 			{
-				"buffer_size": 71423,
+				"buffer_size": 711,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/register.index.js",
+			"file": "app/controller/stream.controller.js",
 			"settings":
 			{
-				"buffer_size": 1097,
+				"buffer_size": 1649,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/config/register.config.json",
+			"file": "app/model/stream/stream.model.js",
 			"settings":
 			{
-				"buffer_size": 203,
+				"buffer_size": 1954,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/dependency/helper.dependency.js",
+			"file": "app/model/user/user.model.js",
 			"settings":
 			{
-				"buffer_size": 2064,
+				"buffer_size": 3677,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/helper/authentication/authentication.helper.js",
+			"file": "app/model/stream/mapper/stream.mapper.model.js",
 			"settings":
 			{
-				"buffer_size": 740,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/server.index.js",
-			"settings":
-			{
-				"buffer_size": 653,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/dependency.index.js",
-			"settings":
-			{
-				"buffer_size": 1902,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/config.index.js",
-			"settings":
-			{
-				"buffer_size": 1432,
+				"buffer_size": 963,
 				"line_ending": "Unix"
 			}
 		}
@@ -478,10 +539,18 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 249.0,
-		"last_filter": "insta",
+		"height": 95.0,
+		"last_filter": "install",
 		"selected_items":
 		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
 			[
 				"insta",
 				"Package Control: Install Package"
@@ -501,13 +570,9 @@
 			[
 				"origam",
 				"Origami: Create Pane on the Right"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			]
 		],
-		"width": 543.0
+		"width": 579.0
 	},
 	"console":
 	{
@@ -529,21 +594,67 @@
 	"expanded_folders":
 	[
 		"/Users/d4r/Sites/EnjingJS",
-		"/Users/d4r/Sites/EnjingJS/app",
-		"/Users/d4r/Sites/EnjingJS/app/helper/authentication",
-		"/Users/d4r/Sites/EnjingJS/app/helper/authentication/adapter",
-		"/Users/d4r/Sites/EnjingJS/app/helper/validation",
-		"/Users/d4r/Sites/EnjingJS/app/helper/validation/adapter",
-		"/Users/d4r/Sites/EnjingJS/node_modules",
-		"/Users/d4r/Sites/EnjingJS/node_modules/hapi",
-		"/Users/d4r/Sites/EnjingJS/node_modules/hapi/test"
+		"/Users/d4r/Sites/EnjingJS/app"
 	],
 	"file_history":
 	[
-		"/Users/d4r/Sites/EnjingJS/app/config/auth.config.json",
-		"/Users/d4r/Sites/EnjingJS/app/index.js",
-		"/Users/d4r/Sites/EnjingJS/index.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/user/mapper/user.mapper.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/stream/mapper/stream.mapper.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/profile/mapper/profile.mapper.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/profile/profile.entity.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/route/stream.route.json",
+		"/Users/d4r/Sites/EnjingJS/app/route.index.js",
+		"/Users/d4r/Sites/EnjingJS/app/route/auth.route.json",
+		"/Users/d4r/Sites/EnjingJS/app/model/user/user.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/profile/profile.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/controller/stream.controller.js",
+		"/Users/d4r/Sites/EnjingJS/migrations/20160526190004_stream.js",
+		"/Users/d4r/Sites/EnjingJS/app/controller/user.controller.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/stream/stream.entity.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/model.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/entity.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/stream/stream.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/route/user.route.json",
+		"/Users/d4r/Sites/EnjingJS/app/register.index.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/auth/auth.model.js",
+		"/Users/d4r/Sites/EnjingJS/migrations/20160526185951_user.js",
+		"/Users/d4r/Sites/EnjingJS/app/helper/authentication/adapter/jwt.authentication.helper.js",
+		"/Users/d4r/Sites/EnjingJS/app/super/model.super.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/user/user.entity.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/follow/follow.entity.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency.index.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/helper.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/controller.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/plugin.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/controller/auth.controller.js",
+		"/Users/d4r/Sites/EnjingJS/app/helper/authentication/authentication.helper.js",
+		"/Users/d4r/Sites/EnjingJS/app/super/controller.super.js",
 		"/Users/d4r/Sites/EnjingJS/.gitignore",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/helper.super.dependecy.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/controller.super.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/key/private/5d240c61-99ec-485b-8a4b-62f6af557566_adr.piv",
+		"/Users/d4r/Sites/EnjingJS/app/config.index.js",
+		"/Users/d4r/Sites/EnjingJS/app/helper/database/orm/orm.helper.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/follow/follow.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/follow/mapper/follow.mapper.model.js",
+		"/Users/d4r/Sites/EnjingJS/migrations/20160526190020_profile.js",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/mapper.super.dependency.js",
+		"/Users/d4r/Sites/EnjingJS/app/super/mapper.super.js",
+		"/Users/d4r/Sites/EnjingJS/migrations/20160528193951_follow_category.js",
+		"/Users/d4r/Sites/EnjingJS/template/React/webpack.config.js",
+		"/Users/d4r/Sites/EnjingJS/app/key/publicundefined_adr.pub",
+		"/Users/d4r/Sites/EnjingJS/template/React/index.html",
+		"/Users/d4r/Sites/EnjingJS/template/React/index.js",
+		"/Users/d4r/Sites/EnjingJS/app/key/public",
+		"/Users/d4r/Sites/darbot/scripts/extender.js",
+		"/Users/d4r/Sites/EnjingJS/app/index.js",
+		"/Users/d4r/Sites/EnjingJS/app/config/auth.config.json",
+		"/Users/d4r/Sites/EnjingJS/app/server.index.js",
+		"/Users/d4r/Sites/EnjingJS/app/super/core.super.js",
+		"/Users/d4r/Sites/EnjingJS/app/config/register.config.json",
+		"/Users/d4r/Sites/EnjingJS/app/config/bak.register.config.json",
+		"/Users/d4r/Sites/EnjingJS/node_modules/hapi/test/auth.js",
+		"/Users/d4r/Sites/EnjingJS/index.js",
 		"/Users/d4r/Sites/v2/office/application/controllers/ifeed.php",
 		"/Users/d4r/Sites/daradmin/app/model/user/user.model.js",
 		"/Users/d4r/Sites/daradmin/app/route.index.js",
@@ -614,37 +725,11 @@
 		"/Users/d4r/Sites/daradmin/app/dependency/super.dependency.js",
 		"/Users/d4r/Sites/daradmin/app/super/core.super.js",
 		"/Users/d4r/Sites/daradmin/app/server.index.js",
-		"/Users/d4r/Sites/daradmin/answer",
-		"/Users/d4r/Sites/daradmin/node_modules/hapi/lib/connection.js",
-		"/Users/d4r/Sites/daradmin/app/dependency",
-		"/Users/d4r/Sites/daradmin/app/config/server.config.json",
-		"/Users/d4r/Sites/daradmin/app/config/route.config.json",
-		"/Users/d4r/Sites/daradmin/node_modules/modal-element/index.html",
-		"/Users/d4r/Sites/daradmin/app/controller/controller.js",
-		"/Users/d4r/Sites/daradmin/register.index.js",
-		"/Users/d4r/Sites/daradmin/template/lothar/index.html",
-		"/Users/d4r/Sites/daradmin/node_modules/react/react.js",
-		"/Users/d4r/Sites/daradmin/node_modules/react/dist/react-with-addons.js",
-		"/Users/d4r/Sites/calendar/app/calendars.html",
-		"/Users/d4r/Sites/calendar/app/js/calen-dar.js",
-		"/Users/d4r/Desktop/getpip.py",
-		"/Users/d4r/Sites/calendar/app/js/jquery-ui-1.11.4/index.html",
-		"/Users/d4r/Sites/calendar/app/js/fullcalendar/dist/fullcalendar.js",
-		"/Users/d4r/Downloads/TimePicki-master/js/timepicki.js",
-		"/Users/d4r/Sites/calendar/app/widgets.html",
-		"/Users/d4r/Sites/calendar/index.js",
-		"/Users/d4r/Sites/calendar/bower_components/fullcalendar/dist/fullcalendar.js",
-		"/Users/d4r/Sites/calendar/app/index.html",
-		"/Users/d4r/Sites/calendar/templates/clean/index.html",
-		"/Users/d4r/Sites/calendar/web/app.html",
-		"/Users/d4r/Sites/calendar/web/js/calen-dar.js",
-		"/Users/d4r/Sites/calendar/app/calendar.html",
-		"/Users/d4r/Sites/calendar/index.html",
-		"/Users/d4r/Sites/v2/api/application/models/stream_model.php"
+		"/Users/d4r/Sites/daradmin/answer"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -659,6 +744,74 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"datecreated",
+			"_public",
+			"user",
+			"access",
+			"'output",
+			"output",
+			"data",
+			"register",
+			"date",
+			"uuid",
+			"description",
+			"lastname",
+			"password",
+			"email",
+			"user.",
+			"user",
+			"username",
+			"user",
+			"username",
+			"firstname",
+			"success",
+			"UserMapperModel",
+			"model",
+			"Follow",
+			"user",
+			"followModel",
+			"userMapper",
+			"userEntity",
+			"UserModel",
+			"birthday",
+			"email",
+			"firstname",
+			"name",
+			"UserEntity",
+			"userMapper",
+			"userEntity",
+			"email",
+			"username",
+			"data",
+			"serviceSignedUser",
+			"generatetok",
+			".exit()",
+			"fs",
+			"data",
+			"username",
+			",\n",
+			"createfilekey",
+			"writefile",
+			"serviceSignedUser",
+			"generatetoken ",
+			"createprivatekey",
+			"authenticator sign",
+			"service sign user done",
+			"service sign",
+			"key",
+			"username",
+			"authHelper",
+			"auth",
+			"promise",
+			"private",
+			"pem",
+			"auth",
+			"private",
+			"public",
+			" public",
+			"config_name",
+			"connector",
+			"nes",
 			"validation",
 			"Validation",
 			"validation",
@@ -718,75 +871,7 @@
 			"style=\"margin-top: 25%\"",
 			"split-pane-component",
 			"Validation",
-			"const",
-			"')\n",
-			"js",
-			"')\n",
-			"UserModel",
-			"config",
-			"Database",
-			"database",
-			"bookself",
-			"\"\"",
-			":",
-			"'",
-			",",
-			":",
-			"data",
-			"fetch",
-			"fecth",
-			"readconfigfile",
-			"joi",
-			"console",
-			"))\n",
-			"_joi",
-			"query",
-			"params",
-			"_retrieve",
-			"User",
-			"Controller",
-			"data",
-			"Register",
-			"CServer",
-			"service",
-			"middleware =",
-			"middleware",
-			"container",
-			"-- setup start",
-			"need",
-			"key",
-			"email",
-			"comment",
-			"kelabang",
-			"backpakerSukabumi2016",
-			"Skeleton documentation",
-			"right",
-			".to-right {\n	float: right;\n}",
-			"0",
-			";",
-			"top",
-			"head",
-			"background",
-			";",
-			";\n",
-			"red",
-			"h1",
-			"_dereq_",
-			"__dereq__",
-			"wine",
-			"trashEl",
-			"updateLiveStore",
-			"ui-state-active",
-			"i.end",
-			"108",
-			"navbar-brand",
-			"S",
-			"updatelivestore",
-			"toUpdateString",
-			"updatelive",
-			"start",
-			"end",
-			"event"
+			"const"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -805,45 +890,16 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/helper/authentication/adapter/jwt.authentication.helper.js",
+					"file": "app/controller/auth.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 239,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								197,
-								197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "node_modules/hapi/test/auth.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 71423,
+						"buffer_size": 1871,
 						"regions":
 						{
 						},
@@ -857,36 +913,35 @@
 						"settings":
 						{
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 3.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/register.index.js",
+					"buffer": 1,
+					"file": "app/route/stream.route.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1097,
+						"buffer_size": 711,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								750,
-								750
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -897,25 +952,26 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/config/register.config.json",
+					"buffer": 2,
+					"file": "app/controller/stream.controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 203,
+						"buffer_size": 1649,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								134,
-								134
+								445,
+								445
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage"
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -925,20 +981,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/dependency/helper.dependency.js",
+					"buffer": 3,
+					"file": "app/model/stream/stream.model.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2064,
+						"buffer_size": 1954,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1989,
-								1989
+								1449,
+								1449
 							]
 						],
 						"settings":
@@ -947,85 +1003,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 443.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/helper/authentication/authentication.helper.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 740,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								500,
-								500
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/server.index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 653,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								299,
-								305
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 376.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/dependency.index.js",
+					"buffer": 4,
+					"file": "app/model/user/user.model.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1902,
+						"buffer_size": 3677,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								908,
-								844
+								340,
+								357
 							]
 						],
 						"settings":
@@ -1034,27 +1032,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 884.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "app/config.index.js",
+					"buffer": 5,
+					"file": "app/model/stream/mapper/stream.mapper.model.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1432,
+						"buffer_size": 963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								926,
+								926
 							]
 						],
 						"settings":
@@ -1063,10 +1061,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 145.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1074,7 +1072,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 39.0
 	},
 	"input":
 	{
@@ -1121,384 +1119,516 @@
 		"selected_items":
 		[
 			[
-				"server",
-				"app/server.index.js"
-			],
-			[
-				"server.",
-				"app/server.index.js"
-			],
-			[
-				"helper",
-				"app/dependency/helper.dependency.js"
-			],
-			[
-				"regiset",
-				"app/register.index.js"
-			],
-			[
-				"config.index",
-				"app/config.index.js"
-			],
-			[
-				"ifeed.php",
-				"v2/office/application/controllers/ifeed.php"
-			],
-			[
-				"user.con",
-				"app/controller/user.controller.js"
-			],
-			[
 				"user.model",
 				"app/model/user/user.model.js"
-			],
-			[
-				"user.map",
-				"app/model/user/mapper/user.mapper.model.js"
-			],
-			[
-				"model.",
-				"app/dependency/model.dependency.js"
-			],
-			[
-				"model.d",
-				"app/dependency/model.dependency.js"
-			],
-			[
-				"user.rout",
-				"app/route/user.route.json"
-			],
-			[
-				"follow.map",
-				"app/model/follow/mapper/follow.mapper.js"
-			],
-			[
-				"usermapp",
-				"app/model/user/mapper/user.mapper.model.js"
-			],
-			[
-				"follow.mapp",
-				"app/model/follow/mapper/follow.mapper.js"
-			],
-			[
-				"model.de",
-				"app/dependency/model.dependency.js"
-			],
-			[
-				"enti",
-				"app/dependency/entity.dependency.js"
-			],
-			[
-				"entity",
-				"app/model/user/user.entity.model.js"
-			],
-			[
-				"follo",
-				"app/model/follow/follow.model.js"
-			],
-			[
-				"route",
-				"app/route/user.route.json"
-			],
-			[
-				"user.cont",
-				"app/controller/user.controller.js"
-			],
-			[
-				"follow",
-				"app/model/follow/mapper/follow.mapper.js"
-			],
-			[
-				"",
-				"app/controller/user.controller.js"
-			],
-			[
-				"routeuser",
-				"app/route/user.route.json"
-			],
-			[
-				"mapp",
-				"app/dependency/mapper.super.dependency.js"
-			],
-			[
-				"mappe",
-				"app/super/mapper.super.js"
-			],
-			[
-				"mapper.",
-				"app/dependency/mapper.super.dependency.js"
-			],
-			[
-				"mapper",
-				"app/super/mapper.super.js"
-			],
-			[
-				"joi.va",
-				"app/helper/validation/adapter/joi.validation.helper.js"
-			],
-			[
-				"user.mapp",
-				"app/model/user/mapper/user.mapper.model.js"
-			],
-			[
-				"usermodel",
-				"app/model/user/user.model.js"
-			],
-			[
-				"validatino.h",
-				"app/helper/validation/validation.helper.js"
-			],
-			[
-				"joi.vai",
-				"app/helper/validation/adapter/joi.validation.helper.js"
-			],
-			[
-				"validation",
-				"app/helper/validation/validation.helper.js"
-			],
-			[
-				"route.ind",
-				"app/route.index.js"
-			],
-			[
-				"stream.model",
-				"app/model/stream/stream.model.js"
-			],
-			[
-				"model",
-				"app/dependency/model.dependency.js"
-			],
-			[
-				"controll",
-				"app/dependency/controller.dependency.js"
-			],
-			[
-				"streamcon",
-				"app/controller/stream.controller.js"
-			],
-			[
-				"controlle",
-				"app/super/controller.super.js"
-			],
-			[
-				"modle.sup",
-				"app/super/model.super.js"
 			],
 			[
 				"stream.mapp",
 				"app/model/stream/mapper/stream.mapper.model.js"
 			],
 			[
-				"ormboo",
-				"app/helper/database/orm/adapter/bookshelf.orm.helper.js"
+				"stream.model",
+				"app/model/stream/stream.model.js"
 			],
 			[
-				"stream.mapper",
+				"stream.routes",
+				"app/route/stream.route.json"
+			],
+			[
+				"stream.con",
+				"app/controller/stream.controller.js"
+			],
+			[
+				"strema.cont",
+				"app/controller/stream.controller.js"
+			],
+			[
+				"route.ind",
+				"app/route.index.js"
+			],
+			[
+				"stream.mode",
+				"app/model/stream/stream.model.js"
+			],
+			[
+				"stream.map",
 				"app/model/stream/mapper/stream.mapper.model.js"
 			],
 			[
-				"orm.helper.js",
-				"app/helper/database/orm/orm.helper.js"
+				"stream.modl",
+				"app/model/stream/stream.model.js"
 			],
 			[
-				"stream.mapper.",
+				"strema.model",
+				"app/model/stream/stream.model.js"
+			],
+			[
+				"profile",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"profile.model",
+				"app/model/profile/profile.model.js"
+			],
+			[
+				"user.con",
+				"app/controller/user.controller.js"
+			],
+			[
+				"streammodel",
+				"app/model/stream/stream.model.js"
+			],
+			[
+				"stream.mappe",
 				"app/model/stream/mapper/stream.mapper.model.js"
 			],
 			[
-				"orm.hel",
-				"app/helper/database/orm/orm.helper.js"
+				"stream.model.js",
+				"app/model/stream/stream.model.js"
+			],
+			[
+				"user.mapp",
+				"app/model/user/mapper/user.mapper.model.js"
+			],
+			[
+				"model.dp",
+				"app/dependency/model.dependency.js"
+			],
+			[
+				"user.map",
+				"app/model/user/mapper/user.mapper.model.js"
+			],
+			[
+				"user",
+				"app/controller/user.controller.js"
+			],
+			[
+				"profilemap",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"strema.con",
+				"app/controller/stream.controller.js"
 			],
 			[
 				"stream.cont",
 				"app/controller/stream.controller.js"
 			],
 			[
-				"model.depe",
+				"streammapp",
+				"app/model/stream/mapper/stream.mapper.model.js"
+			],
+			[
+				"user.oml",
+				"app/model/user/user.model.js"
+			],
+			[
+				"stream.rouet",
+				"app/route/stream.route.json"
+			],
+			[
+				"streamcon",
+				"app/controller/stream.controller.js"
+			],
+			[
+				"stream.route",
+				"app/route/stream.route.json"
+			],
+			[
+				"stream.control",
+				"app/controller/stream.controller.js"
+			],
+			[
+				"auth.cont",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"entit",
+				"app/dependency/entity.dependency.js"
+			],
+			[
+				"model.",
 				"app/dependency/model.dependency.js"
 			],
 			[
-				"controller.dp",
-				"app/dependency/controller.dependency.js"
+				"stream.ent",
+				"app/model/stream/stream.entity.model.js"
 			],
 			[
-				"model.super.js",
-				"app/super/model.super.js"
+				"entity.model.js",
+				"app/model/profile/profile.entity.model.js"
 			],
 			[
-				"route.i",
-				"app/route.index.js"
-			],
-			[
-				"user.model.js",
-				"app/model/user/user.model.js"
+				"followe",
+				"app/model/follow/follow.entity.model.js"
 			],
 			[
 				"user.ent",
 				"app/model/user/user.entity.model.js"
 			],
 			[
-				"connection.hel",
-				"app/helper/database/connection/connection.helper.js"
+				"steram.mapp",
+				"app/model/stream/mapper/stream.mapper.model.js"
 			],
 			[
-				"orm.",
-				"app/helper/database/orm/orm.helper.js"
-			],
-			[
-				"help",
-				"app/dependency/helper.dependency.js"
-			],
-			[
-				"depen",
-				"app/dependency.index.js"
-			],
-			[
-				"depen.",
-				"app/dependency.index.js"
-			],
-			[
-				"user.mapper",
-				"app/model/user/mapper/user.mapper.model.js"
-			],
-			[
-				"helper.de",
-				"app/dependency/helper.dependency.js"
-			],
-			[
-				"config",
-				"app/config.index.js"
-			],
-			[
-				"user.controlle",
-				"app/controller/user.controller.js"
-			],
-			[
-				"entit",
-				"app/model/user/user.entity.model.js"
-			],
-			[
-				"joi.vail",
-				"app/helper/validation/adapter/joi.validation.helper.js"
-			],
-			[
-				"user.controller.js",
-				"app/controller/user.controller.js"
-			],
-			[
-				"validation.helper",
-				"app/helper/validation/validation.helper.js"
-			],
-			[
-				"depende",
-				"app/dependency.index.js"
-			],
-			[
-				"index.js",
-				"app/index.js"
+				"stream.cnot",
+				"app/controller/stream.controller.js"
 			],
 			[
 				"controller",
 				"app/super/controller.super.js"
 			],
 			[
-				"core",
-				"app/super/core.super.js"
+				"super",
+				"app/super/controller.super.js"
 			],
 			[
-				"route.ine",
+				"steram",
+				"app/controller/stream.controller.js"
+			],
+			[
+				"stream.rout",
+				"app/route/stream.route.json"
+			],
+			[
+				"controle",
+				"app/super/controller.super.js"
+			],
+			[
+				"usercont",
+				"app/controller/user.controller.js"
+			],
+			[
+				"authen",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"controller.sup",
+				"app/super/controller.super.js"
+			],
+			[
+				"authentication",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"controlelr",
+				"app/super/controller.super.js"
+			],
+			[
+				"jwt",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"supercon",
+				"app/super/controller.super.js"
+			],
+			[
+				"authocn",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"user.cont",
+				"app/controller/user.controller.js"
+			],
+			[
+				"jwt.auth",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"authent",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"auth",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"auth.con",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"auth.hel",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"controller.su",
+				"app/dependency/controller.super.dependency.js"
+			],
+			[
+				"authmo",
+				"app/model/auth/auth.model.js"
+			],
+			[
+				"authcon",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"model.dep",
+				"app/dependency/model.dependency.js"
+			],
+			[
+				"helper",
+				"app/dependency/helper.dependency.js"
+			],
+			[
+				"heleper",
+				"app/dependency/helper.super.dependecy.js"
+			],
+			[
+				"controler",
+				"app/super/controller.super.js"
+			],
+			[
+				"models",
+				"app/super/model.super.js"
+			],
+			[
+				"auth.model",
+				"app/model/auth/auth.model.js"
+			],
+			[
+				"authcontr",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"usermodle",
+				"app/model/user/user.model.js"
+			],
+			[
+				"profile.map",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"model",
+				"app/dependency/model.dependency.js"
+			],
+			[
+				"userent",
+				"app/model/user/user.entity.model.js"
+			],
+			[
+				"plugin",
+				"app/dependency/plugin.dependency.js"
+			],
+			[
+				"helpe",
+				"app/dependency/helper.dependency.js"
+			],
+			[
+				"authentication.helpe",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"model.de",
+				"app/dependency/model.dependency.js"
+			],
+			[
+				"auth.mode",
+				"app/model/auth/auth.model.js"
+			],
+			[
+				"usermapp",
+				"app/model/user/mapper/user.mapper.model.js"
+			],
+			[
+				"uesr.model",
+				"app/model/user/user.model.js"
+			],
+			[
+				"usermodel",
+				"app/model/user/user.model.js"
+			],
+			[
+				"profile.mapp",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"profile.ent",
+				"app/model/profile/profile.entity.model.js"
+			],
+			[
+				"enti",
+				"app/model/profile/profile.entity.model.js"
+			],
+			[
+				"depen",
+				"app/dependency.index.js"
+			],
+			[
+				"helper.",
+				"app/dependency/helper.dependency.js"
+			],
+			[
+				"entity",
+				"app/dependency/entity.dependency.js"
+			],
+			[
+				"profielent",
+				"app/model/profile/profile.entity.model.js"
+			],
+			[
+				"migration",
+				"migrations/20160526190020_profile.js"
+			],
+			[
+				"profiel.model",
+				"app/model/profile/profile.model.js"
+			],
+			[
+				"profiel.mapp",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"profile.mapper",
+				"app/model/profile/mapper/profile.mapper.model.js"
+			],
+			[
+				"profielmodel",
+				"app/model/profile/profile.model.js"
+			],
+			[
+				"authmodel",
+				"app/model/auth/auth.model.js"
+			],
+			[
+				"auth.moedl",
+				"app/model/auth/auth.model.js"
+			],
+			[
+				"profi",
+				"app/model/profile/profile.model.js"
+			],
+			[
+				"follow.mapp",
+				"app/model/follow/mapper/follow.mapper.model.js"
+			],
+			[
+				"follow.model",
+				"app/model/follow/follow.model.js"
+			],
+			[
+				"controller.us",
+				"app/super/controller.super.js"
+			],
+			[
+				"auth.route",
+				"app/route/auth.route.json"
+			],
+			[
+				"authcont",
+				"app/controller/auth.controller.js"
+			],
+			[
+				"route",
+				"app/route/auth.route.json"
+			],
+			[
+				"rouet.",
 				"app/route.index.js"
 			],
 			[
-				"inde.",
-				"app/index.js"
+				"controlel",
+				"app/dependency/controller.dependency.js"
+			],
+			[
+				"user.controller",
+				"app/controller/user.controller.js"
+			],
+			[
+				"jwt.authen",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"authentication.hel",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"atuhen",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"jwt.",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"jwtuoth",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"user.moe",
+				"app/model/user/user.model.js"
+			],
+			[
+				"jwthel",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"usuer.mappe",
+				"app/model/user/mapper/user.mapper.model.js"
+			],
+			[
+				"user.modle",
+				"app/model/user/mapper/user.mapper.model.js"
+			],
+			[
+				"mapper",
+				"app/super/mapper.super.js"
+			],
+			[
+				"jw",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"authentication.helper.js",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"jwt.hel",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"jwtauth",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
+			],
+			[
+				"authenti",
+				"app/helper/authentication/authentication.helper.js"
 			],
 			[
 				"index.",
 				"app/index.js"
 			],
 			[
-				"index",
-				"app/index.js"
+				"authetn",
+				"app/helper/authentication/authentication.helper.js"
 			],
 			[
-				"i",
-				"index.js"
+				"contrlorre",
+				"app/dependency/controller.super.dependency.js"
 			],
 			[
-				"route.confi",
-				"app/config/routes.config.json"
+				"jwt.aunt",
+				"app/helper/authentication/adapter/jwt.authentication.helper.js"
 			],
 			[
-				"conif",
+				"contrloler.super",
+				"app/super/controller.super.js"
+			],
+			[
+				"authe",
+				"app/helper/authentication/authentication.helper.js"
+			],
+			[
+				"controller.de",
+				"app/dependency/controller.dependency.js"
+			],
+			[
+				"config",
 				"app/config.index.js"
-			],
-			[
-				"config.in",
-				"app/config.index.js"
-			],
-			[
-				"product",
-				"app/Product.php"
-			],
-			[
-				"menu",
-				"app/Menu.php"
-			],
-			[
-				"catering",
-				"app/Http/Controllers/CateringController.php"
-			],
-			[
-				"menu.php",
-				"app/menu.php"
-			],
-			[
-				"products",
-				"app/ProductSellingToday.php"
-			],
-			[
-				"productcon",
-				"app/Http/Controllers/ProductController.php"
-			],
-			[
-				"database",
-				"config/database.php"
-			],
-			[
-				"model.php",
-				"vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php"
-			],
-			[
-				"defaultcon",
-				"app/Http/Controllers/DefaultController.php"
-			],
-			[
-				"migration.php",
-				"vendor/laravel/framework/src/Illuminate/Database/Migrations/Migration.php"
-			],
-			[
-				"routes.",
-				"dar/app/Http/routes.php"
-			],
-			[
-				"database.php",
-				"master/application/config/database.php"
-			],
-			[
-				"config.php",
-				"v2/shop/config.php"
-			],
-			[
-				"routes",
-				"application/config/routes.php"
-			],
-			[
-				"migration",
-				"application/config/migration.php"
-			],
-			[
-				"config.p",
-				"application/config/config.php"
 			]
 		],
 		"width": 0.0
@@ -1529,7 +1659,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 320.0,
+	"side_bar_width": 482.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
