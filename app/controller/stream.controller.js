@@ -9,11 +9,40 @@ class StreamController extends Controller {
 	getFollowingStream (body, params, query, reply) {
 		console.log('get following stream')
 	}
-	getUserStream (body, params, query, reply) {
-		console.log('get user stream')
+	getSingleStream (body, params, query, reply) {
+		let message = ''
+		let output = []
+		this.model.serviceGetStream(params.streamId)
+			.then((stream) => {
+				message = (stream)? 'success get stream': 'fail get stream'
+				output = stream
+				return reply({
+					message: message,
+					data: output
+				})
+			})
+			.catch((err) => {
+				const error = this._badRequest('fail to get stream')
+				return reply(error)
+			})
+		
 	}
 	postStream (body, params, query, reply) {
-		console.log('get user stream')
+		let message = ''
+		let output = []
+		this.model.serviceCreateStream(this._access_user.id, body.content)
+			.then((stream) => {
+				message = (stream)? 'success create stream': 'fail create stream'
+				output = stream
+				return reply({
+					message: message,
+					data: output
+				})
+			})
+			.catch((err) => {
+				const error = this._badRequest('fail to create stream')
+				return reply(error)
+			})
 	}
 }
 module.exports = StreamController

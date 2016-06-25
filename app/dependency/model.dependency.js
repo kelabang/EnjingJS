@@ -16,14 +16,14 @@ const FollowMapper = require(__dirname + '/../model/follow/mapper/follow.mapper.
 
 module.exports = (bottle) => {
 
-	bottle.service('StreamMapperModel', StreamMapperModel, 'Orm')
+	bottle.service('StreamMapperModel', StreamMapperModel, 'Orm', 'UserMapperModel')
 	bottle.service('StreamModel', StreamModel, 'StreamEntityModel', 'StreamMapperModel')
 
 	bottle.service('FollowMapper', FollowMapper, 'Orm')
 	bottle.service('FollowModel', FollowModel, 'FollowEntityModel', 'CategoryFollowEntityModel', 'FollowMapper')
 
 	bottle.service('UserMapperModel', UserMapperModel, 'Orm', 'ProfileMapperModel')
-	bottle.service('UserModel', UserModel, 'UserEntityModel', 'UserMapperModel', 'FollowModel', 'Authentication')
+	bottle.service('UserModel', UserModel, 'UserEntityModel', 'UserMapperModel', 'FollowModel', 'StreamModel', 'Authentication')
 
 	bottle.service('AuthModel', AuthModel, 'UserModel', 'ProfileModel', 'Authentication')
 

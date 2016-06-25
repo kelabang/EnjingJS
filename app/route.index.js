@@ -38,7 +38,12 @@ class Route extends Core {
 				let x = 0
 				data.map((i) => {
 					let name = i.replace('.route.json', '')
-					routeconf[name] = JSON.parse(result[x])
+					try {
+						routeconf[name] = JSON.parse(result[x])
+					}
+					catch (err) {
+						console.error(err)
+					}
 					x++
 				})
 				return cb(null, routeconf)

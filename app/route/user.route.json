@@ -5,7 +5,7 @@
 	"handler": {
 		"path": "user.controller.js",
 		"method": "getUser",
-		"start": "verify"
+		"start": "start"
 	},
 	"validation": {
 		"params": {
@@ -46,5 +46,14 @@
 		"payload": {
 			"username": "string|min@4|max@13|alphanum|required"
 		}
+	}
+}, {
+	"name": "get stream user",
+	"method": "GET",
+	"path": "/user/{username}/stream",
+	"handler": {
+		"path": "user.controller.js",
+		"method": "streamUser",
+		"start": "start"
 	}
 }]

@@ -1,12 +1,27 @@
 'use strict'
 const Model = require(__dirname + '/../../super/model.super.js')
 class UserModel extends Model {
-	constructor (userEntity, userMapper, followModel, Authentication) {
+	constructor (userEntity, userMapper, followModel, streamModel, Authentication) {
 		super()
 		this.userEntity = userEntity
 		this.userMapper = userMapper
 		this.followModel = followModel
+		this.streamModel = streamModel
 		this.authenticator = Authentication.create('jwt')
+	}
+	serviceGetStream(username) {
+		return new this.Promise((resolve, reject) => {
+			this.serviceGetUser(username)
+				.then((user) => {
+					return this.streamModel.serviceGetUserStream(user.id)
+				})
+				.then((streams) => {
+					return resolve(streams)
+				})
+				.catch((err) => {
+					return reject(err)
+				})
+		})
 	}
 	serviceFollowUser(ownername, username) {
 		return new this.Promise((resolve, reject) => {
@@ -58,7 +73,6 @@ class UserModel extends Model {
 						.findWithProfile(user)
 						.then((user) => {
 							if(!user) return resolve(user)
-							// console.log(JSON.stringify(user.related('profile')))
 							resolve({
 								id: user.get('id'),
 								username: user.get('username'),

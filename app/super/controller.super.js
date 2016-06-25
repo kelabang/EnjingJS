@@ -9,6 +9,14 @@ class Controller {
 		message = (message)? message: 'cannot handle this request'
 		return this.descriptor.badRequest(message)
 	}
+	_generateAccessUser (raw) {
+		if(!raw) return false
+		let user = {}
+		user.username = raw.use
+		user.email = raw.ema
+		user.id = raw.id
+		return user
+	}
 	verify (request, reply, nextMethod){
 		let passed = true
 		let token = null
@@ -17,7 +25,9 @@ class Controller {
 		if(!token) return reply(this.descriptor.unauthorized('request doesnt have permission'))
 		this.authentication.verifyUserCredential(token)
 						   .then((user) =>  {
-						   		this._access_user = user // set access user
+						   		// this._access_user = user // set access user
+						   		this._access_user = this._generateAccessUser(user) // set access user
+						   		if(!this._access_user) return this.descriptor.unauthorized('request doesnt have permission')
 						   		return this.start.apply(this, arguments)
 						   })
 						   .error((err) => {

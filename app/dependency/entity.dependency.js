@@ -8,7 +8,7 @@ const ProfileEntityModel = require(__dirname + '/../model/profile/profile.entity
 
 module.exports = (bottle) => {
 
-	bottle.service('StreamEntityModel', StreamEntityModel)
+	bottle.service('StreamEntityModel', StreamEntityModel, 'UUID', 'Moment')
 
 	bottle.service('UserEntityModel', UserEntityModel, 'Crypto')
 

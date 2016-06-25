@@ -4,6 +4,26 @@
 	"path": "/stream/following",
 	"handler": {
 		"path": "stream.controller.js",
-		"method": "getFollowingStream"
+		"method": "getFollowingStream", 
+		"start": "start"
+	}
+}, 
+{
+	"name": "create stream", 
+	"method": "POST",
+	"path": "/stream",
+	"handler": {
+		"path": "stream.controller.js",
+		"method": "postStream",
+		"start": "verify"
+	}
+}, {
+	"name": "get single stream",
+	"method": "GET",
+	"path": "/stream/{streamId}",
+	"handler": {
+		"path": "stream.controller.js",
+		"method": "getSingleStream",
+		"start": "start"
 	}
 }]
