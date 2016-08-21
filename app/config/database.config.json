@@ -8,5 +8,12 @@
 			"database": "ma4m",
 			"charset": "utf8"
 		}
+	},
+	"sqlite-dev": {
+		"client": "sqlite",
+		"connection": {
+			"filename": "./dev.sqlite3"
+		},
+		"useNullAsDefault": true
 	}
 }

@@ -1,4 +1,13 @@
 [{
+	"name": "refresh user", 
+	"method": "POST",
+	"path": "/auth/refresh",
+	"handler": {
+		"path": "auth.controller.js",
+		"method": "postRefresh",
+		"start": "refresh"
+	}
+},{
 	"name": "login user",
 	"method": "POST",
 	"path": "/auth/login",

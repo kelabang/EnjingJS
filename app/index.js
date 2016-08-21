@@ -54,18 +54,3 @@ config
 		})
 
 return console.log('-- we can make it --')
-
-// // register.plugin({
-// // 	'nes': {}
-// // })
-
-// register.done((err)=>{
-
-// 	// route.bind()
-// 	// server.start((err) => {
-// 	//     if (err) {
-// 	//         throw err;
-// 	//     }
-// 	//     console.log('Server running at:', server.info.uri);
-// 	// })
-// })

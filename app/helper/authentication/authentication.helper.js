@@ -23,6 +23,16 @@ class Authenticator {
 		let _public = this.publicPath + '/' + decoded.payload.id + '_adr.pub'
 		return this.adapter.verifyAsync(token, _public)
 	}
+	verifyRefreshCredential(token) {
+		console.log('--> authenticator verify refresh credential')
+		if(!token) return null
+		let decoded = this.adapter.decode(token)
+		console.log('decoded ', decoded)
+		if(!decoded.payload) return null
+		if(decoded.payload.typ !== 'refresh') return null
+		let _public = this.publicPath + '/' + decoded.payload.id + '_adr.pub'
+		return this.adapter.verifyAsync(token, _public)
+	}
 	generateUserCredential(user) {
 		console.log('--> authenticator generate user credential')
 		let payload = {
@@ -32,6 +42,17 @@ class Authenticator {
 		}
 		let _private = this.privatePath + '/' + user.id + '_adr.piv'
 		return this.adapter.generateAsync(payload, _private)
+	}
+	generateUserRefresh(user) {
+		console.log('--> authenticator generate user refresh')
+		let payload = {
+			'use': user.username,
+			'ema': user.email,
+			'id': user.id,
+			'typ': 'refresh'
+		}
+		let _private = this.privatePath + '/' + user.id + '_adr.piv'
+		return this.adapter.generateRefreshAsync(payload, _private)
 	}
 }
 

@@ -1,0 +1,29 @@
+[{
+	"name": "dashboard gallery stream",
+	"method": "GET",
+	"path": "/gallery",
+	"handler": {
+		"path": "gallery.controller.js",
+		"method": "getGallery", 
+		"start": "start"
+	}
+},
+{
+	"name": "add gallery stream",
+	"method": "POST",
+	"path": "/gallery",
+	"handler": {
+		"path": "gallery.controller.js",
+		"method": "postGallery", 
+		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"name": "string|min@5|alphanum|required",
+			"caption": "string|min@5|alphanum|required",
+			"username": "string|min@4|max@13|alphanum|required", 
+			"server": "string|min@4|alphanum|required",
+			"meta": "string|min@4|alphanum"
+		}
+	}
+}]

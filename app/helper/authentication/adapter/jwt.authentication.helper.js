@@ -89,11 +89,22 @@ class JwtAuthentication {
 	}
 	generate(payload, path, cb) {
 		let algorithm = {
-			'algorithm': 'RS256'
+			'algorithm': 'RS256',
 		}
 		this.fs.readFile(path, 'utf8', (err, cert) => {
 			if(err) cb(err)
 			return this.jwt.sign(payload, cert, algorithm, cb)
+		})
+	}
+	generateRefresh(payload, path, cb) {
+		let options = {
+			'algorithm': 'RS256',
+			'expiresIn': '7d'
+		}
+		if(!payload.typ) payload.typ = 'refresh' 
+		this.fs.readFile(path, 'utf8', (err, cert) => {
+			if(err) cb(err)
+			return this.jwt.sign(payload, cert, options, cb)
 		})
 	}
 	generateToken (user, cert, path_pub, cb) {

@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"map",
+				"MapReduce"
+			],
+			[
+				"redu",
+				"reducers"
+			],
+			[
+				"create",
+				"createAction"
+			],
+			[
+				"Login",
+				"LoginForm"
+			],
+			[
+				"notifi",
+				"notificationbar"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"No",
+				"NotificationBar"
+			],
+			[
+				"HTML",
+				"HTMLbody"
+			],
+			[
+				"conten",
+				"contentObj"
+			],
+			[
+				"content",
+				"contentObj"
+			],
+			[
+				"contet",
+				"contentObj"
+			],
+			[
+				"Stream",
+				"StreamReducer"
+			],
+			[
 				"with",
 				"withRelated"
 			],
@@ -30,10 +78,6 @@
 			[
 				"md",
 				"md5sum"
-			],
-			[
-				"create",
-				"createHash"
 			],
 			[
 				"genar",
@@ -177,10 +221,6 @@
 			],
 			[
 				"STream",
-				"StreamMapperModel"
-			],
-			[
-				"Stream",
 				"StreamMapperModel"
 			],
 			[
@@ -474,60 +514,96 @@
 			[
 				"print",
 				"print_r"
-			],
-			[
-				"php",
-				"phpinfo"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controller/auth.controller.js",
+			"file": "/Users/d4r/Sites/ulinary/public/index.html",
 			"settings":
 			{
-				"buffer_size": 1871,
+				"buffer_size": 1339,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/route/stream.route.json",
+			"file": "/Users/d4r/Sites/ulinary/index.js",
 			"settings":
 			{
-				"buffer_size": 711,
+				"buffer_size": 4474,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controller/stream.controller.js",
+			"file": "/Users/d4r/Sites/ulinary/app/component.js",
 			"settings":
 			{
-				"buffer_size": 1649,
+				"buffer_size": 862,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/model/stream/stream.model.js",
+			"file": "/Users/d4r/Sites/ulinary/app/layout/main/component/landingmain.smart.component.js",
 			"settings":
 			{
-				"buffer_size": 1954,
+				"buffer_size": 1710,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/model/user/user.model.js",
+			"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/streamaddform.dump.component.js",
 			"settings":
 			{
-				"buffer_size": 3677,
+				"buffer_size": 880,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/model/stream/mapper/stream.mapper.model.js",
+			"file": "/Users/d4r/Sites/ulinary/app/module/authentication/component/loginform.dump.component.js",
 			"settings":
 			{
-				"buffer_size": 963,
+				"buffer_size": 876,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/d4r/Sites/ulinary/app/layout/main/component/login.smart.component.js",
+			"settings":
+			{
+				"buffer_size": 767,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/d4r/Sites/ulinary/webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 2238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/d4r/Sites/ulinary/app/layout/header/component/header.smart.component.js",
+			"settings":
+			{
+				"buffer_size": 549,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/streamitem.dump.component.js",
+			"settings":
+			{
+				"buffer_size": 732,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/stream.smart.component.js",
+			"settings":
+			{
+				"buffer_size": 478,
 				"line_ending": "Unix"
 			}
 		}
@@ -593,28 +669,97 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/d4r/Sites/EnjingJS",
-		"/Users/d4r/Sites/EnjingJS/app"
+		"/Users/d4r/Sites/ulinary",
+		"/Users/d4r/Sites/ulinary/app",
+		"/Users/d4r/Sites/ulinary/app/layout/header/component",
+		"/Users/d4r/Sites/ulinary/app/module",
+		"/Users/d4r/Sites/ulinary/app/module/authentication",
+		"/Users/d4r/Sites/ulinary/app/module/notification/component",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component",
+		"/Users/d4r/Sites/ulinary/public",
+		"/Users/d4r/Sites/ulinary/public/template",
+		"/Users/d4r/Sites/ulinary/public/template/skeleton",
+		"/Users/d4r/Sites/ulinary/public/template/skeleton/css",
+		"/Users/d4r/Sites/training-redux"
 	],
 	"file_history":
 	[
-		"/Users/d4r/Sites/EnjingJS/app/model/user/mapper/user.mapper.model.js",
+		"/Users/d4r/Sites/ulinary/public/template/skeleton/css/custom.css",
+		"/Users/d4r/Sites/ulinary/app/module/authentication/component",
+		"/Users/d4r/Sites/ulinary/app/reducer.js",
+		"/Users/d4r/Sites/ulinary/webpack.config.js",
+		"/Users/d4r/Sites/react-ui/webpack.config.js",
+		"/Users/d4r/Sites/react-ui/app/modules/notification/components/smart/TabNotification.js",
+		"/Users/d4r/Sites/react-ui/app/component.js",
+		"/Users/d4r/Sites/react-ui/app/index.js",
+		"/Users/d4r/Sites/react-ui/.hgignore",
+		"/Users/d4r/Sites/react-ui/index.real.html",
+		"/Users/d4r/Sites/react-ui/app/modules/component.js",
+		"/Users/d4r/Sites/ulinary/index.js",
+		"/Users/d4r/Sites/ulinary/app/layout/main/component/landingmain.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/stream.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/streamaddform.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/streamtellbutton.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/streamlist.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/streamitem.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/search/component/searchlist.smart.component.js",
+		"/Users/d4r/Sites/ulinary/public/second.index.html",
+		"/Users/d4r/Sites/ulinary/public/index.html",
+		"/Users/d4r/Sites/ulinary/app/module/stream/stream.form.js",
+		"/Users/d4r/Sites/ulinary/app/layout/main/component/profilemain.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/layout/header/component/header.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/notification/component/notificationbar.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/search/component/search.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/component.js",
+		"/Users/d4r/Sites/ulinary/app/layout/main/landing.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/search/search.reducer.js",
+		"/Users/d4r/Sites/ulinary/app/module/search/stream.action.js",
+		"/Users/d4r/Sites/ulinary/app/module/profile/component/profilealias.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/profile/component/profilename.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/profile/component/profiledata.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/profile/component/profileimage.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/profile/component/profile.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/streamtell.dump.component.js",
+		"/Users/d4r/Sites/ulinary/app/constant/route.types.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/stream.action.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/stream.reducer.js",
+		"/Users/d4r/Sites/ulinary/public/template/skeleton/index.html",
+		"/Users/d4r/Sites/ulinary/app/module/notification/component/notification.smart.component.js",
+		"/Users/d4r/Sites/ulinary/app/action.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/dump/notification.dump.component.stream.js",
+		"/Users/d4r/Sites/ulinary/app/module/stream/component/dump/notification.dump.component.js",
+		"/Users/d4r/Sites/ulinary/.babelrc",
+		"/Users/d4r/Sites/ulinary/app/module/stream/dependency.json",
+		"/Users/d4r/Sites/ulinary/app/store.js",
+		"/Users/d4r/Sites/ulinary/dependency.json",
+		"/Users/d4r/Sites/ulinary/app/constant/action.types.js",
+		"/Users/d4r/Sites/ulinary/package.json",
+		"/Users/d4r/Sites/ulinary/output/bundle.js",
+		"/Users/d4r/Sites/ulinary/app/action_types.js",
+		"/Users/d4r/Sites/ulinary/app/constant/action_types.js",
+		"/Users/d4r/Sites/ulinary/dependency.json.bak",
+		"/Users/d4r/Sites/ulinary/reducer.js",
+		"/Users/d4r/Sites/ulinary/module/stream/stream.action.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/stream/stream.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/model/user/user.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/controller/user.controller.js",
+		"/Users/d4r/Sites/EnjingJS/app/controller/auth.controller.js",
+		"/Users/d4r/Sites/EnjingJS/app/route/stream.route.json",
+		"/Users/d4r/Sites/EnjingJS/app/controller/stream.controller.js",
+		"/Users/d4r/Sites/EnjingJS/app/route/user.route.json",
+		"/Users/d4r/Sites/EnjingJS/app/dependency/model.dependency.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/stream/mapper/stream.mapper.model.js",
+		"/Users/d4r/Sites/EnjingJS/app/route.index.js",
+		"/Users/d4r/Sites/Edocs/Polls API.md",
+		"/Users/d4r/Sites/Edocs/Users API.md",
+		"/Users/d4r/Sites/EnjingJS/app/model/user/mapper/user.mapper.model.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/profile/mapper/profile.mapper.model.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/profile/profile.entity.model.js",
-		"/Users/d4r/Sites/EnjingJS/app/route/stream.route.json",
-		"/Users/d4r/Sites/EnjingJS/app/route.index.js",
 		"/Users/d4r/Sites/EnjingJS/app/route/auth.route.json",
-		"/Users/d4r/Sites/EnjingJS/app/model/user/user.model.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/profile/profile.model.js",
-		"/Users/d4r/Sites/EnjingJS/app/controller/stream.controller.js",
 		"/Users/d4r/Sites/EnjingJS/migrations/20160526190004_stream.js",
-		"/Users/d4r/Sites/EnjingJS/app/controller/user.controller.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/stream/stream.entity.model.js",
-		"/Users/d4r/Sites/EnjingJS/app/dependency/model.dependency.js",
 		"/Users/d4r/Sites/EnjingJS/app/dependency/entity.dependency.js",
-		"/Users/d4r/Sites/EnjingJS/app/model/stream/stream.model.js",
-		"/Users/d4r/Sites/EnjingJS/app/route/user.route.json",
 		"/Users/d4r/Sites/EnjingJS/app/register.index.js",
 		"/Users/d4r/Sites/EnjingJS/app/model/auth/auth.model.js",
 		"/Users/d4r/Sites/EnjingJS/migrations/20160526185951_user.js",
@@ -626,7 +771,6 @@
 		"/Users/d4r/Sites/EnjingJS/app/dependency/helper.dependency.js",
 		"/Users/d4r/Sites/EnjingJS/app/dependency/controller.dependency.js",
 		"/Users/d4r/Sites/EnjingJS/app/dependency/plugin.dependency.js",
-		"/Users/d4r/Sites/EnjingJS/app/controller/auth.controller.js",
 		"/Users/d4r/Sites/EnjingJS/app/helper/authentication/authentication.helper.js",
 		"/Users/d4r/Sites/EnjingJS/app/super/controller.super.js",
 		"/Users/d4r/Sites/EnjingJS/.gitignore",
@@ -667,65 +811,7 @@
 		"/Users/d4r/Sites/daradmin/app/model/user/mapper/user.mapper.model.js",
 		"/Users/d4r/Sites/daradmin/app/dependency/mapper.super.dependency.js",
 		"/Users/d4r/Sites/daradmin/app/dependency/model.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/route/user.route.json",
-		"/Users/d4r/Sites/daradmin/app/model/follow/category.follow.entity.model.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160528193951_follow_category.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/entity.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/model/user/user.entity.model.js",
-		"/Users/d4r/Sites/daradmin/app/model/follow/follow.entity.model.js",
-		"/Users/d4r/Sites/daradmin/app/model/follow/mapper/follow.mapper.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160528194021_follow_type.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160528200255_follow.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160528155855_follow.js",
-		"/Users/d4r/Sites/daradmin/app/controller/stream.controller.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/entity.super.dependency.js",
-		"/Users/d4r/Sites/daradmin/package.json",
-		"/Users/d4r/Sites/daradmin/app/helper/validation/validation.helper.js",
-		"/Users/d4r/Sites/daradmin/app/config.index.js",
-		"/Users/d4r/Sites/daradmin/app/helper/validation/adapter/joi.validation.helper.js",
-		"/Users/d4r/Sites/daradmin/app/index.js",
-		"/Users/d4r/Sites/daradmin/app/helper/database/orm/orm.helper.js",
-		"/Users/d4r/Sites/daradmin/app/model/stream/stream.model.js",
-		"/Users/d4r/Sites/daradmin/app/model/stream/mapper/stream.mapper.model.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/controller.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/helper/database/connection/connection.helper.js",
-		"/Users/d4r/Sites/daradmin/app/helper/database/orm/adapter/bookshelf.orm.helper.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/controller.super.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/super/model.super.js",
-		"/Users/d4r/Sites/daradmin/template/skeleton/profile.html",
-		"/Users/d4r/Sites/daradmin/template/skeleton/css/custom.css",
-		"/Users/d4r/Sites/daradmin/template/skeleton/index.html",
-		"/Users/d4r/Sites/daradmin/app/model/stream/stream.entity.model.js",
-		"/Users/d4r/Sites/daradmin/app/route/stream.route.json",
-		"/Users/d4r/Sites/daradmin/app/dependency/helper.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/migration/trip.migration.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160526190020_profile.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160526190004_stream.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160526185957_trip.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160526185951_user.js",
-		"/Users/d4r/Sites/daradmin/knexfile.js",
-		"/Users/d4r/Sites/daradmin/app/migration/user.migration.js",
-		"/Users/d4r/Sites/daradmin/migrations/20160526185324_user.js",
-		"/Users/d4r/Sites/daradmin/app/config/database.config.json",
-		"/Users/d4r/Sites/daradmin/app/helper/database/connection/adapter/knex.connection.helper.js",
-		"/Users/d4r/Sites/daradmin/index.js",
-		"/Users/d4r/Sites/pane/hoho.html",
-		"/Users/d4r/Sites/pane/index.html",
-		"/Users/d4r/Sites/daradmin/app/model/user.model.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/model.super.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/super/helper.super.js",
-		"/Users/d4r/Sites/daradmin/app/helper/database/database.helper.js",
-		"/Users/d4r/Sites/daradmin/app/helper/database/adapter/knex.database.helper.js",
-		"/Users/d4r/Sites/daradmin/app/dependency/helper.super.dependecy.js",
-		"/Users/d4r/Sites/daradmin/app/route/user.route.js",
-		"/Users/d4r/Sites/daradmin/app/config/register.config.json",
-		"/Users/d4r/Sites/daradmin/app/register.index.js",
-		"/Users/d4r/Sites/daradmin/app/helper/validation/adapter",
-		"/Users/d4r/Sites/daradmin/app/helper",
-		"/Users/d4r/Sites/daradmin/app/dependency/super.dependency.js",
-		"/Users/d4r/Sites/daradmin/app/super/core.super.js",
-		"/Users/d4r/Sites/daradmin/app/server.index.js",
-		"/Users/d4r/Sites/daradmin/answer"
+		"/Users/d4r/Sites/daradmin/app/route/user.route.json"
 	],
 	"find":
 	{
@@ -744,6 +830,56 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"handleSubmitLogin",
+			"handleSubmit",
+			"ContactForm",
+			"class",
+			"LandingMain",
+			"src=\"img",
+			"f=\"css",
+			"src=\"js",
+			"StreamForm",
+			"reducer",
+			"sle",
+			"class",
+			"}",
+			"{",
+			"BASE",
+			"profile",
+			"search",
+			"header",
+			"}",
+			"class",
+			"SearchList",
+			"relativeTime",
+			"Search",
+			"}",
+			"StreamList",
+			"js",
+			"'\n",
+			"class",
+			"Stream",
+			"Profile",
+			"profile",
+			"StreamTell",
+			"notification",
+			"'\n",
+			"ProfileImage",
+			"prefixRoute+",
+			"?/,\n",
+			"Router",
+			"Todo",
+			"DELETE_TODO",
+			"Action",
+			"module/",
+			"redux",
+			"loopThroughArray",
+			"content array",
+			":",
+			"var",
+			"owner",
+			"stream",
+			"serviceGetUserStream",
 			"datecreated",
 			"_public",
 			"user",
@@ -821,57 +957,7 @@
 			"config",
 			"check",
 			"ifeed_",
-			"var",
-			"description",
-			"-->> service create default",
-			"description",
-			"followcatEntity",
-			"FollowEntity",
-			"CategoryFollowEntity",
-			"user",
-			"email",
-			"name",
-			"username",
-			"follow_type_id",
-			"follow_id",
-			"username",
-			"id",
-			"UserEntityModel",
-			"FollowEntityModel",
-			"UserEntityModel",
-			"Mapper",
-			"belong",
-			"id",
-			"username",
-			"UserEntityModel",
-			"crypto",
-			"Model",
-			"console.log",
-			"-->>",
-			"-- content config",
-			"-- config ready --",
-			"<< -- data",
-			"console.log(",
-			"stream_id",
-			"password",
-			"email",
-			"name",
-			"streamEntity",
-			"userEntity",
-			"')",
-			"\n		",
-			"')\n",
-			"\n		",
-			"collectionn.",
-			"di check",
-			"<< -- coba liat",
-			"KnexConnection",
-			"config",
-			"ben",
-			"style=\"margin-top: 25%\"",
-			"split-pane-component",
-			"Validation",
-			"const"
+			"var"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -890,28 +976,207 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controller/auth.controller.js",
+					"file": "/Users/d4r/Sites/ulinary/public/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1871,
+						"buffer_size": 1339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1143,
+								1143
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 91.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/d4r/Sites/ulinary/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3943,
+								3961
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3067.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/d4r/Sites/ulinary/app/component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 862,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/d4r/Sites/ulinary/app/layout/main/component/landingmain.smart.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1710,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								909,
+								894
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/streamaddform.dump.component.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 49.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/d4r/Sites/ulinary/app/module/authentication/component/loginform.dump.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								510,
+								510
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/d4r/Sites/ulinary/app/layout/main/component/login.smart.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 767,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								701,
+								701
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"open_with_edit": true,
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -923,12 +1188,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/route/stream.route.json",
+					"buffer": 7,
+					"file": "/Users/d4r/Sites/ulinary/webpack.config.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 711,
+						"buffer_size": 2238,
 						"regions":
 						{
 						},
@@ -941,35 +1206,95 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1002.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/Users/d4r/Sites/ulinary/app/layout/header/component/header.smart.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								424,
+								424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 13.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/streamitem.dump.component.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								270,
+								257
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "app/controller/stream.controller.js",
+					"buffer": 10,
+					"file": "/Users/d4r/Sites/ulinary/app/module/stream/component/stream.smart.component.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1649,
+						"buffer_size": 478,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								445,
-								445
+								395,
+								408
 							]
 						],
 						"settings":
 						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
 							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -977,94 +1302,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/model/stream/stream.model.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1954,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1449,
-								1449
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 376.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/model/user/user.model.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3677,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								340,
-								357
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 884.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/model/stream/mapper/stream.mapper.model.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 963,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								926,
-								926
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 145.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				}
 			]
@@ -1119,16 +1357,76 @@
 		"selected_items":
 		[
 			[
-				"user.model",
-				"app/model/user/user.model.js"
+				"index.js",
+				"ulinary/index.js"
+			],
+			[
+				"webpack.config",
+				"ulinary/webpack.config.js"
+			],
+			[
+				"header.smart",
+				"ulinary/app/layout/header/component/header.smart.component.js"
+			],
+			[
+				"webpack.con",
+				"ulinary/webpack.config.js"
+			],
+			[
+				"webpakc",
+				"react-ui/webpack.config.js"
+			],
+			[
+				"webpac",
+				"ulinary/webpack.config.js"
+			],
+			[
+				"index",
+				"ulinary/index.js"
 			],
 			[
 				"stream.mapp",
-				"app/model/stream/mapper/stream.mapper.model.js"
+				"EnjingJS/app/model/stream/mapper/stream.mapper.model.js"
 			],
 			[
 				"stream.model",
-				"app/model/stream/stream.model.js"
+				"EnjingJS/app/model/stream/stream.model.js"
+			],
+			[
+				"user.model",
+				"EnjingJS/app/model/user/user.model.js"
+			],
+			[
+				"user.cont",
+				"EnjingJS/app/controller/user.controller.js"
+			],
+			[
+				"user.con",
+				"EnjingJS/app/controller/user.controller.js"
+			],
+			[
+				"user.route",
+				"EnjingJS/app/route/user.route.json"
+			],
+			[
+				"stream.route.sj",
+				"EnjingJS/app/route/stream.route.json"
+			],
+			[
+				"model.de",
+				"EnjingJS/app/dependency/model.dependency.js"
+			],
+			[
+				"user.moedl",
+				"EnjingJS/app/model/user/user.model.js"
+			],
+			[
+				"route.index",
+				"EnjingJS/app/route.index.js"
+			],
+			[
+				"poll",
+				"Edocs/Polls API.md"
 			],
 			[
 				"stream.routes",
@@ -1169,10 +1467,6 @@
 			[
 				"profile.model",
 				"app/model/profile/profile.model.js"
-			],
-			[
-				"user.con",
-				"app/controller/user.controller.js"
 			],
 			[
 				"streammodel",
@@ -1327,10 +1621,6 @@
 				"app/controller/auth.controller.js"
 			],
 			[
-				"user.cont",
-				"app/controller/user.controller.js"
-			],
-			[
 				"jwt.auth",
 				"app/helper/authentication/adapter/jwt.authentication.helper.js"
 			],
@@ -1417,10 +1707,6 @@
 			[
 				"authentication.helpe",
 				"app/helper/authentication/authentication.helper.js"
-			],
-			[
-				"model.de",
-				"app/dependency/model.dependency.js"
 			],
 			[
 				"auth.mode",
@@ -1581,54 +1867,6 @@
 			[
 				"jw",
 				"app/helper/authentication/adapter/jwt.authentication.helper.js"
-			],
-			[
-				"authentication.helper.js",
-				"app/helper/authentication/authentication.helper.js"
-			],
-			[
-				"jwt.hel",
-				"app/helper/authentication/adapter/jwt.authentication.helper.js"
-			],
-			[
-				"jwtauth",
-				"app/helper/authentication/adapter/jwt.authentication.helper.js"
-			],
-			[
-				"authenti",
-				"app/helper/authentication/authentication.helper.js"
-			],
-			[
-				"index.",
-				"app/index.js"
-			],
-			[
-				"authetn",
-				"app/helper/authentication/authentication.helper.js"
-			],
-			[
-				"contrlorre",
-				"app/dependency/controller.super.dependency.js"
-			],
-			[
-				"jwt.aunt",
-				"app/helper/authentication/adapter/jwt.authentication.helper.js"
-			],
-			[
-				"contrloler.super",
-				"app/super/controller.super.js"
-			],
-			[
-				"authe",
-				"app/helper/authentication/authentication.helper.js"
-			],
-			[
-				"controller.de",
-				"app/dependency/controller.dependency.js"
-			],
-			[
-				"config",
-				"app/config.index.js"
 			]
 		],
 		"width": 0.0
@@ -1659,7 +1897,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 482.0,
+	"side_bar_width": 379.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

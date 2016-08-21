@@ -37,6 +37,7 @@ class Route extends Core {
 			Promise.all(que).then((result) => {
 				let x = 0
 				data.map((i) => {
+					console.log(">> route on the fly ", i)
 					let name = i.replace('.route.json', '')
 					try {
 						routeconf[name] = JSON.parse(result[x])
@@ -96,6 +97,7 @@ class Route extends Core {
 		cb(null, _data)
 	}
 	bind (cb) {
+		console.log(':: bind ')
 		return this
 					.fetchAsync()
 					.then((data) => {

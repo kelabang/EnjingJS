@@ -1,5 +1,8 @@
 'use strict'
 
+const GalleryModel = require(__dirname + '/../model/gallery/gallery.model.js')
+const GalleryMapperModel = require(__dirname + '/../model/gallery/mapper/gallery.mapper.model.js')
+
 const StreamModel = require(__dirname + '/../model/stream/stream.model.js')
 const StreamMapperModel = require(__dirname + '/../model/stream/mapper/stream.mapper.model.js')
 
@@ -15,6 +18,9 @@ const FollowModel = require(__dirname + '/../model/follow/follow.model.js')
 const FollowMapper = require(__dirname + '/../model/follow/mapper/follow.mapper.model.js')
 
 module.exports = (bottle) => {
+
+	bottle.service('GalleryMapperModel', GalleryMapperModel, 'Orm')
+	bottle.service('GalleryModel', GalleryModel, 'GalleryEntityModel', 'GalleryMapperModel')
 
 	bottle.service('StreamMapperModel', StreamMapperModel, 'Orm', 'UserMapperModel')
 	bottle.service('StreamModel', StreamModel, 'StreamEntityModel', 'StreamMapperModel')

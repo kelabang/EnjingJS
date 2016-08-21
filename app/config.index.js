@@ -26,6 +26,7 @@ class Config {
 		})
 	}
 	readconfigJSON(filename, cb) {
+		console.log('-->> filenaem ',filename)
 		this.readconfigfile(filename, (err, data) => {
 			cb(err, JSON.parse(data))
 		})

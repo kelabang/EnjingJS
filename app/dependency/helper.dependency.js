@@ -37,7 +37,8 @@ module.exports = (bottle) => {
 	bottle.factory('Orm', (container) => {
 
 		const connection = container.Connection
-		const connector = connection.create('mysql-dev')
+		// const connector = connection.create('mysql-dev')
+		const connector = connection.create('sqlite-dev')
 
 		const bottle = container.Bottle
 		const orm = new Orm(bottle)	

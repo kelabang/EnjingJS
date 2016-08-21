@@ -1,5 +1,6 @@
 'use strict'
 const Core = require(__dirname + '/super/core.super.js')
+const corsHeaders = require('hapi-cors-headers')
 class Server extends Core {
 	constructor (server) {
 		super()
@@ -17,7 +18,14 @@ class Server extends Core {
 	}
 	setup(cb) {
 		this.server.connection({
-			'port': this.config().port
+			'port': this.config().port,
+			'routes': {
+				cors: {
+					credentials: true,
+					origin: ['*'],
+
+				}
+			}
 		})
 		return cb (null)
 	}
@@ -26,6 +34,7 @@ class Server extends Core {
 			if(err) cb(err)
 			console.log('Server running at:', this.server.info.uri);
 		})
+		this.server.ext('onPreResponse', corsHeaders)
 	}
 }
 module.exports = Server

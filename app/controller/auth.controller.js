@@ -7,6 +7,30 @@ class AuthController extends Controller {
 		super(config)
 		this.model = model
 	}
+	postRefresh(body, params, query, reply) {
+		console.log('-->> refresh in auth controller')
+		let message = ''
+		let output = []
+		return this.model.serviceRefresh(this._access_user.username)
+			.then((access) => {
+				console.log('-->> service login success')
+				message = (access)? 'success refresh': 'fail refresh'
+				output = access
+				console.log(access)
+				return reply({
+					'message': message,
+					'data': output
+				})
+			})
+			.catch((err) => {
+				console.log('-->> service login catch', err)
+				message = 'refresh error'
+				return reply({
+					'message': message,
+					'output': output
+				})
+			})
+	}
 	postLogin (body, params, query, reply) {
 		console.log('-->> login in auth controller')
 		let message = ''
@@ -44,6 +68,7 @@ class AuthController extends Controller {
 		console.log('-->> register in auth controller')
 		let message = ''
 		let output = []
+		console.log('>> body ', typeof body)
 		return this.model.serviceRegister(body.username, body.email, body.password, body.name)
 			.then((user) => {
 				console.log('-->> service register success')

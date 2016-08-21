@@ -7,6 +7,36 @@ class AuthModel extends Model {
 		this.profileModel = profileModel
 		this.authHelper = authHelper
 	}
+	serviceRefresh(username) {
+		console.log('-->> serviceRefresh in AuthModel')
+		let output = {}
+		return new this.Promise((resolve, reject) => {
+			this.userModel.serviceValidUser(username)
+				.then((user) => {
+					return this.userModel.serviceGetUser(user.username)
+				})
+				.then((user) => {
+					console.log('-->> serivce get user ')
+					const authenticator = this.authHelper.create('jwt')
+					output['user'] = user
+					return authenticator.generateUserCredential(user)
+				})
+				.then((token) => {
+					console.log('-->> generate credentials ', token)
+					const authenticator = this.authHelper.create('jwt')
+					output['access_token'] = token
+					return authenticator.generateUserRefresh(output['user'])
+				})
+				.then((rftoken) => {
+					console.log('-->> generate refresh credentials', rftoken)
+					output['refresh_token'] = rftoken
+					return resolve(output)
+				})
+				.catch((error) => {
+					return reject(error)
+				})
+		})
+	}
 	serviceLogin (username, password) {
 		console.log('-->> service login in auth model')
 		let output = {}
@@ -30,7 +60,13 @@ class AuthModel extends Model {
 				})
 				.then((token) => {
 					console.log('-->> generate credentials ', token)
+					const authenticator = this.authHelper.create('jwt')
 					output['access_token'] = token
+					return authenticator.generateUserRefresh(output['user'])
+				})
+				.then((rftoken) => {
+					console.log('-->> generate refresh credentials', rftoken)
+					output['refresh_token'] = rftoken
 					return resolve(output)
 				})
 				.catch((error) => {
@@ -44,7 +80,7 @@ class AuthModel extends Model {
 		console.log('-->> service login twitter in auth model', tw_oauth_private)
 	}
 	serviceRegister (username, email, password, name) {
-		console.log('-->> service register in auth model')
+		console.log('-->> service register in auth model', arguments)
 		let output = []
 		let type = 1 // 1 for user, 2 for trip
 		let options = {}

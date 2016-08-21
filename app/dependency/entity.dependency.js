@@ -5,8 +5,11 @@ const UserEntityModel = require(__dirname + '/../model/user/user.entity.model.js
 const FollowEntityModel = require(__dirname + '/../model/follow/follow.entity.model.js')
 const CategoryFollowEntityModel = require(__dirname + '/../model/follow/category.follow.entity.model.js')
 const ProfileEntityModel = require(__dirname + '/../model/profile/profile.entity.model.js')
+const GalleryEntityModel = require(__dirname + '/../model/gallery/gallery.entity.model.js')
 
 module.exports = (bottle) => {
+
+	bottle.service('GalleryEntityModel', GalleryEntityModel, 'UUID', 'Moment')
 
 	bottle.service('StreamEntityModel', StreamEntityModel, 'UUID', 'Moment')
 
