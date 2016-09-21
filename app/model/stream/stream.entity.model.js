@@ -26,6 +26,13 @@ class StreamEntity {
 	get content () {
 		return this._content
 	}
+	set images (images) {
+		this._images = images
+		return this
+	}
+	get images () {
+		return this._images
+	}
 	set vote (vote) {
 		this._vote = vote
 		return this
@@ -39,6 +46,13 @@ class StreamEntity {
 	}
 	get stream_id () {
 		return this._stream_id
+	}
+	set type (type) {
+		this._type = type
+		return this
+	}
+	get type () {
+		return (this._type)? this._type: 0
 	}
 	set datecreated (datecreated) {
 		this._datecreated = datecreated

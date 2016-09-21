@@ -15,7 +15,8 @@ class GalleryMapperModel extends Mapper {
 		let toInsert = {
 			id: gallery.id,
 			name: gallery.name,
-			username: gallery.username,
+			user_id: gallery.user_id,
+			category_id: gallery.category_id,
 			caption: gallery.caption,
 			server: gallery.server,
 			meta: gallery.meta,
@@ -23,11 +24,26 @@ class GalleryMapperModel extends Mapper {
 		}
 		return this._createMapper(toInsert).save(null, {method: 'insert'})
 	}
-	findAll() {
+	_findAll() {
 		console.log(':: findAll')
 		return this._createMapper({})
 		.fetchAll()
 	}
+	findAll(gallery) {
+		console.log(':: findAll')
+		console.log(gallery.category_id)
+		return this._createMapper({}).where({
+			category_id: gallery.category_id
+		}).fetchAll()
+	}
+	findById(gallery) {
+		console.log(':: findById')
+		return this ._createMapper({})
+					.where({
+						id: gallery.id
+					})
+					.fetch()
+	} 
 	// findAll(stream) {
 	// 	console.log(':: findAll')
 	// 	return this._createMapper({
@@ -43,6 +59,6 @@ class GalleryMapperModel extends Mapper {
 	// 	}).fetch({
 	// 		withRelated: ['user']
 	// 	})
-	// }
+	// 
 }
 module.exports = GalleryMapperModel

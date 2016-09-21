@@ -30,5 +30,13 @@
 		"path": "auth.controller.js",
 		"method": "postRegister",
 		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"email": "string|required", 
+			"name": "string|required", 
+			"username": "string|required",
+			"password": "string|required"
+		}
 	}
 }]

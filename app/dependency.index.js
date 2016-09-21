@@ -1,5 +1,7 @@
+'use strict'
+
 const Bottle = require('bottlejs')
-const bottle = new Bottle()
+let bottle = new Bottle()
 
 const Route = require('./route.index.js')
 const Register = require('./register.index.js')

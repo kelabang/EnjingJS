@@ -15,7 +15,7 @@
 	"handler": {
 		"path": "gallery.controller.js",
 		"method": "postGallery", 
-		"start": "start"
+		"start": "verify"
 	},
 	"validation": {
 		"payload": {

@@ -1,7 +1,16 @@
+/*
+* @Author: Imam
+* @Date:   2016-08-21 18:34:25
+* @Last Modified by:   Imam
+* @Last Modified time: 2016-08-21 18:36:10
+*/
+
+'use strict';
+
 'use strict'
-class GalleryEntity {
+// const Model = require(__dirname + '/../../super/model.super.js')
+class TestimoniEntity {
 	constructor (uuid, moment) {
-		console.log(':: constructor GalleryEntity')
 		this.uuid = uuid
 		this.moment = moment
 	}
@@ -12,12 +21,12 @@ class GalleryEntity {
 	get id () {
 		return (!this._id)? this.uuid.v4(): this._id
 	}
-	set user_id (user_id) {
-		this._user_id = user_id
+	set username (username) {
+		this._username = username
 		return this
 	}
-	get user_id () {
-		return this._user_id
+	get username () {
+		return this._username
 	}
 	set content (content) {
 		this._content = content
@@ -40,23 +49,24 @@ class GalleryEntity {
 	get stream_id () {
 		return this._stream_id
 	}
+	get type () {
+		return 1
+	}
 	set datecreated (datecreated) {
 		this._datecreated = datecreated
 		return this
 	}
 	get datecreated () {
 		return (!this._datecreated)? this.moment().utc().format('YYYY-MM-DD HH:mm:ss'): this._datecreated 
-	}
+	}	
 }
-class GalleryEntityModel  {
+class TestimoniEntityModel  {
 	constructor (uuid, moment) {
-		console.log(':: constructor')
 		this.uuid = uuid 
 		this.moment = moment
 	}
 	create () {
-		console.log(':: create')
-		return new GalleryEntity(this.uuid, this.moment)
+		return new TestimoniEntity(this.uuid, this.moment)
 	}
 }
-module.exports = GalleryEntityModel
+module.exports = TestimoniEntityModel

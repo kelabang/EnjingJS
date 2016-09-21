@@ -30,7 +30,7 @@ class GalleryController extends Controller {
 		console.log(body)
 		let message = ''
 		let output = []
-		this.model.serviceAddGallery(body.name, body.caption, body.username, body.server, body.meta)
+		this.model.serviceAddGallery(body.name, body.caption, this._access_user.id, body.server, body.meta)
 			.then((gallery) => {
 				message = (gallery)? 'success upload gallery': 'fail upload gallery'
 				output = gallery

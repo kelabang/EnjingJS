@@ -1,18 +1,43 @@
 'use strict'
 const Model = require(__dirname + '/../../super/model.super.js')
 class GalleryModel extends Model {
-	constructor (galleryEntity, galleryMapper) {
+	constructor (galleryEntity, galleryMapper, categoryGalleryEntity) {
 		super()
 		this.galleryEntity = galleryEntity
 		this.galleryMapper = galleryMapper
+		this.categoryGalleryEntity = categoryGalleryEntity
 	}
-	serviceGetGallery() {
-		console.log(':: serviceGetGallery')
+	serviceGetGalleryId (id) {
+		console.log(':: serviceGetGalleryId ', id)
+		let gallery = this.galleryEntity.create()
+		gallery.id = id
 		return new this.Promise((resolve, reject) => {
-
-			this.galleryMapper.findAll()
+			this.galleryMapper.findById(gallery)
+				.then((gallery) => {
+					console.log('> return gallery mapper')
+					if(!gallery) return resolve()
+					resolve({
+						id: gallery.get('id'),
+						name: gallery.get('name'),
+						caption: gallery.get('caption'),
+						server: gallery.get('server')
+					})
+				})
+				.catch((err) => {
+					reject(err)
+				})
+		})
+	}
+	serviceGetGallery(category_id) {
+		console.log(':: serviceGetGallery')
+		let gallery = this.galleryEntity.create()
+		category_id = (!category_id)? this.categoryGalleryEntity.create().id: category_id
+		gallery.category_id = category_id
+		return new this.Promise((resolve, reject) => {
+			this.galleryMapper.findAll(gallery)
 				.then((galleries) => {
 					let output = []
+					console.log('> result findAll', galleries)
 					galleries.map((gallery) => {
 						output.push({
 							id: gallery.get('id'),
@@ -27,14 +52,16 @@ class GalleryModel extends Model {
 				})
 		})
 	}
-	serviceAddGallery (name, caption, username, server, meta) {
+	serviceAddGallery (name, caption, user_id, server, meta, category_id) {
 		console.log(':: serviceAddGallery')
 		let gallery = this.galleryEntity.create()
-		
+
+		category_id = (!category_id)? this.categoryGalleryEntity.create().id: category_id
 		gallery.name = name
-		gallery.username = username
+		gallery.user_id = user_id
 		gallery.caption = caption
 		gallery.server = server
+		gallery.category_id = category_id
 		gallery.meta = meta
 
 		return new this.Promise((resolve, reject) => {

@@ -1,6 +1,7 @@
 'use strict'
 const UserController = require(__dirname + '/../controller/user.controller.js')
 const StreamController = require(__dirname + '/../controller/stream.controller.js')
+const TestimoniController = require(__dirname + '/../controller/testimoni.controller.js')
 const AuthController = require(__dirname + '/../controller/auth.controller.js')
 const GalleryController = require(__dirname + '/../controller/gallery.controller.js')
 module.exports = (bottle) => {
@@ -18,6 +19,8 @@ module.exports = (bottle) => {
 	bottle.service('UserController', UserController, 'ControllerConfig', 'UserModel')
 
 	bottle.service('StreamController', StreamController, 'ControllerConfig', 'StreamModel')
+	
+	bottle.service('TestimoniController', TestimoniController, 'ControllerConfig', 'TestimoniModel')
 
 	bottle.service('GalleryController', GalleryController, 'ControllerConfig', 'GalleryModel')
 

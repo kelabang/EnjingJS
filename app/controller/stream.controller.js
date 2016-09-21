@@ -25,12 +25,14 @@ class StreamController extends Controller {
 				const error = this._badRequest('fail to get stream')
 				return reply(error)
 			})
-		
+
 	}
 	postStream (body, params, query, reply) {
+		console.log(':: postStream')
 		let message = ''
 		let output = []
-		this.model.serviceCreateStream(this._access_user.id, body.content)
+		// console.log('>> access user ', this._access_user)
+		this.model.serviceCreateStream(this._access_user.id, body.content, body.images)
 			.then((stream) => {
 				message = (stream)? 'success create stream': 'fail create stream'
 				output = stream

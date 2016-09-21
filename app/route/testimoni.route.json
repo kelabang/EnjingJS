@@ -1,0 +1,25 @@
+[{
+	"name": "add testimoni stream",
+	"method": "POST",
+	"path": "/testimoni",
+	"handler": {
+		"path": "testimoni.controller.js",
+		"method": "postTestimoni", 
+		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"content": "string|min@5|alphanum|required",
+			"images": "array"
+		}
+	}
+}, {
+	"name": "get all testimoni",
+	"method": "GET",
+	"path": "/testimoni",
+	"handler": {
+		"path": "testimoni.controller.js",
+		"method": "getTestimoni",
+		"start": "start"
+	}
+}]

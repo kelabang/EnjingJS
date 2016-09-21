@@ -6,6 +6,9 @@ const GalleryMapperModel = require(__dirname + '/../model/gallery/mapper/gallery
 const StreamModel = require(__dirname + '/../model/stream/stream.model.js')
 const StreamMapperModel = require(__dirname + '/../model/stream/mapper/stream.mapper.model.js')
 
+const TestimoniModel = require(__dirname + '/../model/testimoni/testimoni.model.js')
+const TestimoniMapperModel = require(__dirname + '/../model/testimoni/mapper/testimoni.mapper.model.js')
+
 const AuthModel = require(__dirname + '/../model/auth/auth.model.js')
 
 const UserModel = require(__dirname + '/../model/user/user.model.js')
@@ -20,10 +23,13 @@ const FollowMapper = require(__dirname + '/../model/follow/mapper/follow.mapper.
 module.exports = (bottle) => {
 
 	bottle.service('GalleryMapperModel', GalleryMapperModel, 'Orm')
-	bottle.service('GalleryModel', GalleryModel, 'GalleryEntityModel', 'GalleryMapperModel')
+	bottle.service('GalleryModel', GalleryModel, 'GalleryEntityModel', 'GalleryMapperModel', 'CategoryGalleryEntity')
 
 	bottle.service('StreamMapperModel', StreamMapperModel, 'Orm', 'UserMapperModel')
-	bottle.service('StreamModel', StreamModel, 'StreamEntityModel', 'StreamMapperModel')
+	bottle.service('StreamModel', StreamModel, 'StreamEntityModel', 'StreamMapperModel', 'GalleryModel')
+
+	bottle.service('TestimoniMapperModel', TestimoniMapperModel, 'Orm', 'UserMapperModel')
+	bottle.service('TestimoniModel', TestimoniModel, 'StreamModel')
 
 	bottle.service('FollowMapper', FollowMapper, 'Orm')
 	bottle.service('FollowModel', FollowModel, 'FollowEntityModel', 'CategoryFollowEntityModel', 'FollowMapper')
