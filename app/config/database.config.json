@@ -11,8 +11,9 @@
 	},
 	"sqlite-dev": {
 		"client": "sqlite",
+
 		"connection": {
-			"filename": "./dev.sqlite3"
+			"filename": "dev.sqlite3"
 		},
 		"useNullAsDefault": true
 	}
