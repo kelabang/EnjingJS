@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
 		table.uuid('gallery_id').references('gallery.id')
 		table.integer('vote')
 		table.integer('type')
+		table.integer('status')
 		table.dateTime('datecreated')
 	})
 };

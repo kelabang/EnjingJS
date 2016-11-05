@@ -4,7 +4,7 @@
 	"path": "/testimoni",
 	"handler": {
 		"path": "testimoni.controller.js",
-		"method": "postTestimoni", 
+		"method": "postTestimoni",
 		"start": "start"
 	},
 	"validation": {
@@ -14,12 +14,51 @@
 		}
 	}
 }, {
-	"name": "get all testimoni",
+	"name": "get all testimoni enable",
 	"method": "GET",
 	"path": "/testimoni",
 	"handler": {
 		"path": "testimoni.controller.js",
-		"method": "getTestimoni",
+		"method": "getAllTestimoniEnable",
 		"start": "start"
+	}
+}, 
+{
+	"name": "get all testimoni",
+	"method": "GET",
+	"path": "/testimoni_all",
+	"handler": {
+		"path": "testimoni.controller.js",
+		"method": "getAllTestimoni",
+		"start": "start"
+	}
+},
+{
+	"name": "enable testimoni",
+	"method": "POST",
+	"path": "/testimoni/enable",
+	"handler": {
+		"path": "testimoni.controller.js",
+		"method": "postTestimoniEnable",
+		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"id": "string|required"
+		}
+	}
+},{
+	"name": "disable testimoni",
+	"method": "POST",
+	"path": "/testimoni/disable",
+	"handler": {
+		"path": "testimoni.controller.js",
+		"method": "postTestimoniDisable",
+		"start": "start"
+	},
+	"validation": {
+		"payload": {
+			"id": "string|required"
+		}
 	}
 }]

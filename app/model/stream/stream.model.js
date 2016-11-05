@@ -43,14 +43,16 @@ class StreamModel extends Model {
 	serviceCreateTestimoni(ownerId, content, images) {
 		console.log(':: serviceCreateTestimoni')
 		const TESTIMONI = 1 // testimoni type
-		return this.serviceCreateStream(ownerId, content, images, TESTIMONI) //
+		const STATUS = 0 // status type
+		return this.serviceCreateStream(ownerId, content, images, TESTIMONI, STATUS) //
 	}
-	serviceCreateStream (ownerId, content, images, type) {
+	serviceCreateStream (ownerId, content, images, type, status) {
 		console.log(':: serviceCreateStream')
 		let stream = this.streamEntity.create()
 		stream.user_id = ownerId
 		stream.content = content
 		stream.type = type
+		stream.status = status
 		return new this.Promise((resolve, reject) => {
 			this.serviceUploadingStream(ownerId, images)
 				.then((galleries) => {
@@ -68,6 +70,36 @@ class StreamModel extends Model {
 					reject(err)
 				})
 		})
+	}
+	serviceEnableTypeTestimoni(id) {
+		console.log(':: service enable type testimoni')
+		return this.serviceEnableStream(id)
+	}
+	serviceDisableTypeTestimoni(id) {
+		console.log(':: service enable type testimoni')
+		return this.serviceDisableStream(id)
+	}
+	serviceEnableStream (streamId) {
+		let stream = this.streamEntity.create()
+		stream.status = 1
+		stream.id = streamId
+		return this.streamMapper.updateStatus(stream)
+			.then((stream) => {
+				return {
+					'id': stream.get('id')
+				}
+			})
+	}
+	serviceDisableStream (streamId) {
+		let stream = this.streamEntity.create()
+		stream.status = 0
+		stream.id = streamId
+		return this.streamMapper.updateStatus(stream)
+			.then((stream) => {
+				return {
+					'id': stream.get('id')
+				}
+			})
 	}
 	serviceGetStream (streamId) {
 		console.log(':: serviceGetStream')
@@ -106,6 +138,81 @@ class StreamModel extends Model {
 			})
 		})
 	}
+	serviceGetTypeAllTestimoni () {
+		console.log(':: serivceGetTypeAllTestimoni')
+		let type = 1
+		let stream = this.streamEntity.create()
+		stream.type = type
+		return new this.Promise((resolve, reject) => {
+			this.streamMapper.findType(stream)
+				.then((streams) => {
+					let output = []
+					console.log(':: output stream mapper findatype')
+					console.log(streams)
+					streams.map((stream) => {
+						console.log('> stream loop ')
+						let galleries = stream.get('gallery_id').split(',') || []
+						output.push({
+							id: stream.get('id'),
+							content: stream.get('content'),
+							images: galleries,
+							status: stream.get('status'),
+							datecreated: stream.get('datecreated'),
+						})
+					})
+					return output
+				})
+				.then((output) => {
+					return this.Promise.map(output, (stream) => {
+						return this.serviceRetreiveImage(stream)
+					})
+				})
+				.then((streams) => {
+					resolve(streams)
+				})
+				.catch((error) => {
+					reject(error)
+				})
+		})
+	}
+	serviceGetTypeTestimoniEnable () {
+		console.log(':: serviceGetTypeTestimoniEnable')
+		let type = 1
+		let status = 1
+		let stream = this.streamEntity.create()
+		stream.type = type
+		stream.status = status
+		return new this.Promise((resolve, reject) => {
+			this.streamMapper.findType(stream)
+				.then((streams) => {
+					let output = []
+					console.log('> result findType')
+					console.log(streams)
+					streams.map((stream) => {
+						console.log('> stream loop gallery ')
+						let galleries = stream.get('gallery_id').split(',') || []
+						output.push({
+							id: stream.get('id'),
+							content: stream.get('content'),
+							images: galleries,
+							datecreated: stream.get('datecreated')
+						})
+					})
+					return output
+				})
+				.then((output) => {
+					return this.Promise.map(output, (stream) => {
+						return this.serviceRetreiveImage(stream)
+					})
+				})
+				.then((streams) => {
+					resolve(streams)
+				})
+				.catch((error) => {
+					reject(error)
+				})
+		})
+	}
 	serviceGetTypeTestimoni () {
 		console.log(':: serviceGetTypeTestimoni')
 		let type = 1
@@ -123,7 +230,9 @@ class StreamModel extends Model {
 						output.push({
 							id: stream.get('id'),
 							content: stream.get('content'),
-							images: galleries
+							images: galleries,
+							status: stream.get('status'),
+							datecreated: stream.get('datecreated'),
 						})
 					})
 					return output

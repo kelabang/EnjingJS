@@ -20,22 +20,32 @@ class StreamMapperModel extends Mapper {
 			user_id: stream.user_id,
 			content: stream.content,
 			gallery_id: stream.gallery_id,
+			status: stream.status || 0,
 			vote: 0,
 			type: stream.type || 0,
 			datecreated: stream.datecreated
 		}
 		return this._createMapper(toInsert).save(null, {method: 'insert'})
 	}
+	updateStatus (stream) {
+		console.log('-- update --')
+		let toUpdate = {}
+		let where = {}
+		where.id = stream.id
+		toUpdate.status = stream.status
+		return this._createMapper(where).save(toUpdate, {patch: true})
+	}
 	findType (stream) {
 		console.log(':: findType')
 		console.log(stream.type)
+		let filter = {}
+		if(stream.type) filter['type'] = stream.type
+		if(stream.status) filter['status'] = stream.status
 		return this._createMapper({})
-		.where({
-			'type': stream.type
-		})
+		.where(filter)
 		.fetchAll()
 	}
-	findAll(stream) {
+ 	findAll(stream) {
 		return this._createMapper({
 			'user_id': stream.user_id
 		}).fetchAll({
