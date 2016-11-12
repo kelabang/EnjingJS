@@ -50,7 +50,8 @@ class UserModel extends Model {
 			return this	.userMapper
 						.find(user)
 						.then((data) => {
-							if(!data) return resolve(data)
+							console.log(data)
+							if(!data) return reject(data)
 							resolve({
 								id: data.get('id'),
 								username: data.get('username'),
