@@ -43,7 +43,7 @@ class StreamModel extends Model {
 	serviceCreateTestimoni(ownerId, content, images) {
 		console.log(':: serviceCreateTestimoni')
 		const TESTIMONI = 1 // testimoni type
-		const STATUS = 0 // status type
+		const STATUS = 1 // status type
 		return this.serviceCreateStream(ownerId, content, images, TESTIMONI, STATUS) //
 	}
 	serviceCreateStream (ownerId, content, images, type, status) {
